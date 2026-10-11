@@ -1,0 +1,80 @@
+{
+  "input_features": [
+    "main",
+    "O_donor",
+    "N_donor",
+    "S_donor",
+    "P_donor",
+    "carboxyl",
+    "amino",
+    "thiol",
+    "sulfonic",
+    "phosphonic",
+    "metal__Al",
+    "metal__Cd",
+    "metal__Co",
+    "metal__Cr",
+    "metal__Cu",
+    "metal__Fe",
+    "metal__Mg",
+    "metal__Ni",
+    "metal__Ti",
+    "metal__Zn",
+    "metal__Zr",
+    "linker__F1",
+    "linker__F10",
+    "linker__F11",
+    "linker__F2",
+    "linker__F3",
+    "linker__F4",
+    "linker__F5",
+    "linker__F6",
+    "linker__F7",
+    "linker__F8",
+    "linker__F9",
+    "modulator__acetic acid",
+    "modulator__benzoic acid",
+    "modulator__butyric acid",
+    "modulator__formic acid",
+    "modulator__hydrochloric acid",
+    "modulator__hydrofluoric acid",
+    "modulator__isonicotinic acid",
+    "modulator__nitric acid",
+    "modulator__none",
+    "modulator__oxalic acid",
+    "modulator__sodium hydroxide",
+    "modulator__triethylamine",
+    "modulator__urea",
+    "BET_m2_g",
+    "total_pore_volume_cm3_g",
+    "average_pore_diameter_nm",
+    "csv_t",
+    "csv_pH",
+    "csv_temperature_K",
+    "MOF_dose_g_L"
+  ],
+  "search_space": {
+    "C": [
+      1,
+      2000,
+      "log"
+    ],
+    "epsilon": [
+      0.001,
+      0.1,
+      "log"
+    ],
+    "gamma": [
+      0.0001,
+      0.1,
+      "log"
+    ]
+  },
+  "best_model_parameters": {
+    "C": 440.76396820340864,
+    "epsilon": 0.006433769330379377,
+    "gamma": 0.023903389298233352
+  },
+  "target": "csv_qt",
+  "note": "去掉tip/T特征, 30组随机搜索+起点验证"
+}

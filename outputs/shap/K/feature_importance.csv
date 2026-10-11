@@ -1,0 +1,62 @@
+feature,group,mean_abs_shap
+main__main_M1,M,8.689059
+main__main_M10,M,0.6646684
+main__main_M2,M,6.1306667
+main__main_M3,M,26.487518
+main__main_M4,M,1.9485453
+main__main_M5,M,18.005749
+main__main_M6,M,1.6842227
+main__main_M7,M,0.3387126
+main__main_M8,M,1.305395
+main__main_M9,M,2.7228885
+numeric__O_donor,O_donor,3.358318
+numeric__N_donor,N_donor,15.392998
+numeric__S_donor,S_donor,5.0840635
+numeric__P_donor,P_donor,1.29111
+numeric__carboxyl,carboxyl,16.605335
+numeric__amino,amino,5.053453
+numeric__thiol,thiol,0.8747128
+numeric__sulfonic,sulfonic,4.008851
+numeric__phosphonic,phosphonic,0.69649094
+numeric__metal__Al,MN,0.88237387
+numeric__metal__Cd,MN,5.6427794
+numeric__metal__Co,MN,1.433416
+numeric__metal__Cr,MN,0.8104665
+numeric__metal__Cu,MN,28.32992
+numeric__metal__Fe,MN,1.7046072
+numeric__metal__Mg,MN,0.49644947
+numeric__metal__Ni,MN,0.8827899
+numeric__metal__Ti,MN,0.6936947
+numeric__metal__Zn,MN,8.937251
+numeric__metal__Zr,MN,11.155343
+numeric__linker__F1,LF,20.50073
+numeric__linker__F10,LF,1.4971992
+numeric__linker__F11,LF,0.07740815
+numeric__linker__F2,LF,0.5179472
+numeric__linker__F3,LF,0.17830636
+numeric__linker__F4,LF,7.2175856
+numeric__linker__F5,LF,2.5864916
+numeric__linker__F6,LF,4.28715
+numeric__linker__F7,LF,1.9352367
+numeric__linker__F8,LF,0.7351348
+numeric__linker__F9,LF,0.005697003
+numeric__modulator__acetic acid,Mod,3.5063636
+numeric__modulator__benzoic acid,Mod,0.007727811
+numeric__modulator__butyric acid,Mod,0.0009139749
+numeric__modulator__formic acid,Mod,4.571677
+numeric__modulator__hydrochloric acid,Mod,1.1798282
+numeric__modulator__hydrofluoric acid,Mod,2.9195101
+numeric__modulator__isonicotinic acid,Mod,0.20019655
+numeric__modulator__nitric acid,Mod,0.5015457
+numeric__modulator__none,Mod,4.6530614
+numeric__modulator__oxalic acid,Mod,0.010815564
+numeric__modulator__sodium hydroxide,Mod,2.13062
+numeric__modulator__triethylamine,Mod,2.949741
+numeric__modulator__urea,Mod,0.17522584
+numeric__BET_m2_g,BET_m2_g,29.953094
+numeric__total_pore_volume_cm3_g,total_pore_volume_cm3_g,26.189953
+numeric__average_pore_diameter_nm,average_pore_diameter_nm,29.321972
+numeric__csv_t,csv_t,61.48059
+numeric__csv_pH,csv_pH,3.0737736
+numeric__csv_temperature_K,csv_temperature_K,2.5624034
+numeric__MOF_dose_g_L,MOF_dose_g_L,13.477951

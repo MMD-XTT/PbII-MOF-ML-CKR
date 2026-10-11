@@ -1,0 +1,146 @@
+[
+  {
+    "task": "C",
+    "algorithm": "Ridge",
+    "rows": 3060,
+    "features": 52,
+    "sample_prediction_min": 117.46398722305318,
+    "sample_prediction_max": 211.28990824333647
+  },
+  {
+    "task": "C",
+    "algorithm": "SVR",
+    "rows": 3060,
+    "features": 52,
+    "sample_prediction_min": -10.433983181952016,
+    "sample_prediction_max": 203.22092827142671
+  },
+  {
+    "task": "C",
+    "algorithm": "RF",
+    "rows": 3060,
+    "features": 52,
+    "sample_prediction_min": 55.93981786838974,
+    "sample_prediction_max": 223.44735823584142
+  },
+  {
+    "task": "C",
+    "algorithm": "ExtraTrees",
+    "rows": 3060,
+    "features": 52,
+    "sample_prediction_min": 91.70124421661511,
+    "sample_prediction_max": 242.01224826307092
+  },
+  {
+    "task": "C",
+    "algorithm": "XGBoost",
+    "rows": 3060,
+    "features": 52,
+    "sample_prediction_min": 1.0391604900360107,
+    "sample_prediction_max": 212.1378631591797
+  },
+  {
+    "task": "C",
+    "algorithm": "CatBoost",
+    "rows": 3060,
+    "features": 52,
+    "sample_prediction_min": -8.793730058705421,
+    "sample_prediction_max": 211.57208199844956
+  },
+  {
+    "task": "K",
+    "algorithm": "Ridge",
+    "rows": 2645,
+    "features": 52,
+    "sample_prediction_min": 155.75014393514462,
+    "sample_prediction_max": 262.7248490571239
+  },
+  {
+    "task": "K",
+    "algorithm": "SVR",
+    "rows": 2645,
+    "features": 52,
+    "sample_prediction_min": 8.995176971464787,
+    "sample_prediction_max": 219.24846709990138
+  },
+  {
+    "task": "K",
+    "algorithm": "RF",
+    "rows": 2645,
+    "features": 52,
+    "sample_prediction_min": 44.84397664490558,
+    "sample_prediction_max": 213.75354198284776
+  },
+  {
+    "task": "K",
+    "algorithm": "ExtraTrees",
+    "rows": 2645,
+    "features": 52,
+    "sample_prediction_min": 35.898669198994675,
+    "sample_prediction_max": 215.83397900739143
+  },
+  {
+    "task": "K",
+    "algorithm": "XGBoost",
+    "rows": 2579,
+    "features": 52,
+    "sample_prediction_min": 186.91372680664062,
+    "sample_prediction_max": 221.77708435058594
+  },
+  {
+    "task": "K",
+    "algorithm": "CatBoost",
+    "rows": 2645,
+    "features": 52,
+    "sample_prediction_min": 1.4761038192162346,
+    "sample_prediction_max": 226.67860171987837
+  },
+  {
+    "task": "R",
+    "algorithm": "Ridge",
+    "rows": 2013,
+    "features": 50,
+    "sample_prediction_min": 92.810329140832,
+    "sample_prediction_max": 96.6421097153808
+  },
+  {
+    "task": "R",
+    "algorithm": "SVR",
+    "rows": 2013,
+    "features": 50,
+    "sample_prediction_min": 95.07484799964865,
+    "sample_prediction_max": 95.07885340080422
+  },
+  {
+    "task": "R",
+    "algorithm": "RF",
+    "rows": 2013,
+    "features": 50,
+    "sample_prediction_min": 95.04976328737139,
+    "sample_prediction_max": 95.08495007603238
+  },
+  {
+    "task": "R",
+    "algorithm": "ExtraTrees",
+    "rows": 2013,
+    "features": 50,
+    "sample_prediction_min": 95.03420224897177,
+    "sample_prediction_max": 95.09361512371156
+  },
+  {
+    "task": "R",
+    "algorithm": "XGBoost",
+    "rows": 2013,
+    "features": 50,
+    "sample_prediction_min": 95.06607055664062,
+    "sample_prediction_max": 95.08747100830078
+  },
+  {
+    "task": "R",
+    "algorithm": "CatBoost",
+    "rows": 2013,
+    "features": 50,
+    "sample_prediction_min": 94.89552052653578,
+    "sample_prediction_max": 95.25630586973047
+  }
+]

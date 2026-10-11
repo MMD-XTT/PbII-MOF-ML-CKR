@@ -1,0 +1,20 @@
+{
+  "model": "RF",
+  "dataset": "R",
+  "target": "csv_retention_percent",
+  "target_label": "retention percent (%)",
+  "rows": 2013,
+  "papers": 151,
+  "materials": 160,
+  "r2_oof": 0.8799646346279105,
+  "mae_oof": 1.6381132171248731,
+  "rmse_oof": 4.063107303236559,
+  "r2_fold_mean": 0.8791544805002822,
+  "r2_fold_sd": 0.050286998749038275,
+  "best_cv_r2": 0.8791544805002822,
+  "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+  "optimization": "new Optuna TPE Bayesian optimization after removing T; same 5-fold CV",
+  "n_trials": 30,
+  "numeric_transform": "none; target and conditions retain original units",
+  "T_feature": "removed"
+}

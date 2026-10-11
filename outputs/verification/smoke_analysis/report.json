@@ -1,0 +1,26 @@
+[
+  {
+    "task": "C",
+    "source_analysis_population": 3060,
+    "smoke_sample_rows": 96,
+    "one_dimensional_grid": 5,
+    "two_dimensional_grid": 4,
+    "finite": true
+  },
+  {
+    "task": "K",
+    "source_analysis_population": 2644,
+    "smoke_sample_rows": 96,
+    "one_dimensional_grid": 5,
+    "two_dimensional_grid": 4,
+    "finite": true
+  },
+  {
+    "task": "R",
+    "source_analysis_population": 2013,
+    "smoke_sample_rows": 96,
+    "one_dimensional_grid": 5,
+    "two_dimensional_grid": 4,
+    "finite": true
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "model": "SVR",
+  "target": "csv_qt",
+  "rows": 2645,
+  "papers": 191,
+  "materials": 208,
+  "r2_oof": 0.677390197986827,
+  "mae_oof_mg_g": 83.1554944362189,
+  "rmse_oof_mg_g": 137.49608905358275,
+  "r2_fold_mean": 0.6783407323915899,
+  "r2_fold_sd": 0.04901219277775742,
+  "best_cv_r2": 0.6783407323915899,
+  "trials": 30,
+  "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+  "note": "去掉tip/T特征"
+}

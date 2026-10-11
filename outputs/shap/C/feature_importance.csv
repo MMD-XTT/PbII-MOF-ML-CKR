@@ -1,0 +1,53 @@
+feature,group,mean_abs_shap
+main,M,28.485800251489323
+O_donor,O_donor,0.09369059762874582
+N_donor,N_donor,5.299383909758907
+S_donor,S_donor,11.69665131943454
+P_donor,P_donor,0.35990861572571564
+carboxyl,carboxyl,12.120116007239409
+amino,amino,5.297539125026211
+thiol,thiol,1.3397991690981759
+sulfonic,sulfonic,1.7660678335536577
+phosphonic,phosphonic,0.16235855505752314
+metal__Al,MN,1.7230607672835292
+metal__Cd,MN,2.1901973444514424
+metal__Co,MN,1.4269167886809755
+metal__Cr,MN,0.30665692400604455
+metal__Cu,MN,11.017717228177986
+metal__Fe,MN,5.176564961436017
+metal__Mg,MN,0.18295870263562902
+metal__Ni,MN,0.28208478303533524
+metal__Ti,MN,0.2574388258772993
+metal__Zn,MN,14.603736429448471
+metal__Zr,MN,7.754945411364499
+linker__F1,LF,9.753516980752673
+linker__F10,LF,4.056924862668866
+linker__F11,LF,0.048452760196398804
+linker__F2,LF,0.42986612354406767
+linker__F3,LF,0.06045794614362924
+linker__F4,LF,3.827563432295096
+linker__F5,LF,1.6322357540749894
+linker__F6,LF,9.5916222614207
+linker__F7,LF,0.339024267450048
+linker__F8,LF,0.09663028039318955
+linker__F9,LF,0.013180505200463427
+modulator__acetic acid,Mod,4.0030177954907
+modulator__benzoic acid,Mod,0.010956749694274952
+modulator__butyric acid,Mod,0.017287722492827864
+modulator__formic acid,Mod,0.574365205841312
+modulator__hydrochloric acid,Mod,1.4824824093414968
+modulator__hydrofluoric acid,Mod,1.0726938298354711
+modulator__isonicotinic acid,Mod,0.27980722524538937
+modulator__nitric acid,Mod,0.018459319970424062
+modulator__none,Mod,6.4935401629568315
+modulator__oxalic acid,Mod,0.32867042288507475
+modulator__sodium hydroxide,Mod,1.989455645923375
+modulator__triethylamine,Mod,0.5169969688944724
+modulator__urea,Mod,0.4907651151633807
+BET_m2_g,BET_m2_g,25.129776420308453
+total_pore_volume_cm3_g,total_pore_volume_cm3_g,9.371782958661266
+average_pore_diameter_nm,average_pore_diameter_nm,11.217623748655651
+csv_pH,csv_pH,38.851297639829035
+csv_temperature_K,csv_temperature_K,8.451585306332479
+csv_ce,csv_ce,72.78082028117036
+MOF_dose_g_L,MOF_dose_g_L,26.821562860677552

@@ -1,0 +1,19 @@
+task,algorithm,selected,source_workbook,source_archive_folder,training_matrix,target,rows,papers,materials,categorical_main,oof_target_and_row_order_verified,r2_oof,source_workbook_role,archived_fit_current_workbook_equivalent
+C,CatBoost,True,data/C_model.xlsx,CatBoost_去T_CV5,data/training/C_CatBoost.csv,csv_qe,3060,190,206,False,True,0.8941783145912616,,
+C,ExtraTrees,False,data/C_model.xlsx,ExtraTrees_去T_CV5,data/training/C_ExtraTrees.csv,csv_qe,3060,190,206,False,True,0.8530419159511782,,
+C,RF,False,data/C_model.xlsx,RF_去T_CV5,data/training/C_RF.csv,csv_qe,3060,190,206,False,True,0.857995822402692,,
+C,Ridge,False,data/C_model.xlsx,Ridge_去T_CV5,data/training/C_Ridge.csv,csv_qe,3060,190,206,False,True,0.29051784911010603,,
+C,SVR,False,data/C_model.xlsx,SVR_去T_CV5,data/training/C_SVR.csv,csv_qe,3060,190,206,False,True,0.7251652786403489,,
+C,XGBoost,False,data/C_model.xlsx,XGBoost_去T_CV5,data/training/C_XGBoost.csv,csv_qe,3060,190,206,False,True,0.8860667474671571,,
+K,CatBoost,False,data/K模型_qt统一.xlsx,CatBoost_qt统一_去T_重跑,data/training/K_CatBoost.csv,csv_qt,2645,191,208,False,True,0.8861413023760192,current training/interpretation input; frozen training_matrix preserves archived fit population,True
+K,ExtraTrees,False,data/K模型_qt统一.xlsx,ExtraTrees_qt统一_去T_重跑,data/training/K_ExtraTrees.csv,csv_qt,2645,191,208,False,True,0.8445440379160096,current training/interpretation input; frozen training_matrix preserves archived fit population,True
+K,RF,False,data/K模型_qt统一.xlsx,RF_qt统一_去T_重跑,data/training/K_RF.csv,csv_qt,2645,191,208,False,True,0.8486850401107056,current training/interpretation input; frozen training_matrix preserves archived fit population,True
+K,Ridge,False,data/K模型_qt统一.xlsx,Ridge_qt统一_去T_重跑,data/training/K_Ridge.csv,csv_qt,2645,191,208,False,True,0.2770488948793418,current training/interpretation input; frozen training_matrix preserves archived fit population,True
+K,SVR,False,data/K模型_qt统一.xlsx,SVR_qt统一_去T_重跑,data/training/K_SVR.csv,csv_qt,2645,191,208,False,True,0.677390197986827,current training/interpretation input; frozen training_matrix preserves archived fit population,True
+K,XGBoost,True,data/K模型_qt统一.xlsx,XGBoost_qt统一_去T_重跑,data/training/K_XGBoost.csv,csv_qt,2579,185,202,True,True,0.8889940864636395,current training/interpretation input; frozen training_matrix preserves archived fit population,False
+R,CatBoost,True,data/R_model.xlsx,CatBoost_RetentionPercent_去T_CV5,data/training/R_CatBoost.csv,csv_retention_percent,2013,151,160,True,True,0.9568887126727081,,
+R,ExtraTrees,False,data/R_model.xlsx,ExtraTrees_RetentionPercent_去T_CV5,data/training/R_ExtraTrees.csv,csv_retention_percent,2013,151,160,True,True,0.893025587012583,,
+R,RF,False,data/R_model.xlsx,RF_RetentionPercent_去T_CV5,data/training/R_RF.csv,csv_retention_percent,2013,151,160,True,True,0.8799646346279105,,
+R,Ridge,False,data/R_model.xlsx,Ridge_RetentionPercent_去T_CV5,data/training/R_Ridge.csv,csv_retention_percent,2013,151,160,True,True,0.3610993731400113,,
+R,SVR,False,data/R_model.xlsx,SVR_RetentionPercent_去T_CV5,data/training/R_SVR.csv,csv_retention_percent,2013,151,160,True,True,0.9433702374080992,,
+R,XGBoost,False,data/R_model.xlsx,XGBoost_RetentionPercent_去T_CV5,data/training/R_XGBoost.csv,csv_retention_percent,2013,151,160,True,True,0.9527073341532175,,

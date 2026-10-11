@@ -1,0 +1,16 @@
+{
+  "model": "Ridge",
+  "target": "csv_qe",
+  "rows": 3060,
+  "papers": 190,
+  "materials": 206,
+  "r2_oof": 0.29051784911010603,
+  "mae_oof_mg_g": 154.65940622997581,
+  "rmse_oof_mg_g": 203.63706065630046,
+  "r2_fold_mean": 0.2848723270651093,
+  "r2_fold_sd": 0.04641240689752592,
+  "best_cv_r2": 0.2848723270651093,
+  "trials": 30,
+  "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+  "note": "去掉tip/T特征"
+}

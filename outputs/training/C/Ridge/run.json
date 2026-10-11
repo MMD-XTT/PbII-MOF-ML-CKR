@@ -1,0 +1,7 @@
+{
+  "task": "C",
+  "algorithm": "Ridge",
+  "mode": "refit",
+  "rows": 3060,
+  "source_matrix": "data/training/C_Ridge.csv"
+}

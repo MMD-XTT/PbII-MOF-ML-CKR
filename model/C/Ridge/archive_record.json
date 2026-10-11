@@ -1,0 +1,15 @@
+{
+  "task": "C",
+  "algorithm": "Ridge",
+  "selected": false,
+  "source_workbook": "data/C_model.xlsx",
+  "source_archive_folder": "Ridge_去T_CV5",
+  "training_matrix": "data/training/C_Ridge.csv",
+  "target": "csv_qe",
+  "rows": 3060,
+  "papers": 190,
+  "materials": 206,
+  "categorical_main": false,
+  "oof_target_and_row_order_verified": true,
+  "r2_oof": 0.29051784911010603
+}

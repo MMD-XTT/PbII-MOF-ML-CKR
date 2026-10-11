@@ -1,0 +1,15 @@
+{
+  "task": "R",
+  "algorithm": "CatBoost",
+  "selected": true,
+  "source_workbook": "data/R_model.xlsx",
+  "source_archive_folder": "CatBoost_RetentionPercent_去T_CV5",
+  "training_matrix": "data/training/R_CatBoost.csv",
+  "target": "csv_retention_percent",
+  "rows": 2013,
+  "papers": 151,
+  "materials": 160,
+  "categorical_main": true,
+  "oof_target_and_row_order_verified": true,
+  "r2_oof": 0.9568887126727081
+}

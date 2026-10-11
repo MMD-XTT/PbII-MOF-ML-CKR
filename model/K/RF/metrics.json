@@ -1,0 +1,16 @@
+{
+  "model": "RF",
+  "target": "csv_qt",
+  "rows": 2645,
+  "papers": 191,
+  "materials": 208,
+  "r2_oof": 0.8486850401107056,
+  "mae_oof_mg_g": 56.409681552718375,
+  "rmse_oof_mg_g": 94.1656480245446,
+  "r2_fold_mean": 0.8486750435785293,
+  "r2_fold_sd": 0.02785722279175412,
+  "best_cv_r2": 0.8486750435785293,
+  "trials": 30,
+  "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+  "note": "去掉tip/T特征"
+}

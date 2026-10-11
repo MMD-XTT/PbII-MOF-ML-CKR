@@ -1,0 +1,16 @@
+﻿Domain,Full_name,Original_field,Display_label,Tasks
+MA,Material architecture,main,M,C K R
+CS,Chemical sites,metal_node_elements,MN,C K R
+CS,Chemical sites,Linker family,LF,C K R
+CS,Chemical sites,O_donor; N_donor; S_donor; P_donor,O; N; S; P,C K R
+CS,Chemical sites,carboxyl; amino; thiol; sulfonic; phosphonic,-COOH; -NH2; -SH; -SO3H; -PO3H2,C K R
+PS,Pore structure,BET_m2_g,BET (m2/g),C K R
+PS,Pore structure,total_pore_volume_cm3_g,PV (cm3/g),C K R
+PS,Pore structure,average_pore_diameter_nm,PD (nm),C K R
+SR,Synthesis regulation,modulator,Mod,C K R
+AC,Adsorption conditions,csv_ce,Ce (mg/L),C
+AC,Adsorption conditions,csv_pH,pH,C K R
+AC,Adsorption conditions,csv_temperature_K,Tem (K),C K R
+AC,Adsorption conditions,MOF_dose_g_L,CMOF (g/L),C K R
+AC,Adsorption conditions,csv_t,t (min),K
+AC,Adsorption conditions,csv_cycle,CN,R

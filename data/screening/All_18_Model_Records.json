@@ -1,0 +1,3580 @@
+[
+  {
+    "task": "C",
+    "folder": "E:\\mzh3\\邪修中\\C\\Ridge_去T_CV5",
+    "metrics": {
+      "model": "Ridge",
+      "target": "csv_qe",
+      "rows": 3060,
+      "papers": 190,
+      "materials": 206,
+      "r2_oof": 0.29051784911010603,
+      "mae_oof_mg_g": 154.65940622997581,
+      "rmse_oof_mg_g": 203.63706065630046,
+      "r2_fold_mean": 0.2848723270651093,
+      "r2_fold_sd": 0.04641240689752592,
+      "best_cv_r2": 0.2848723270651093,
+      "trials": 30,
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+      "note": "去掉tip/T特征"
+    },
+    "parameters": {
+      "input_features": [
+        "main",
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F3",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__isonicotinic acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_pH",
+        "csv_temperature_K",
+        "csv_ce",
+        "MOF_dose_g_L"
+      ],
+      "search_space": {
+        "alpha": [
+          0.001,
+          100,
+          "log"
+        ]
+      },
+      "best_model_parameters": {
+        "alpha": 2.8063544152478572
+      },
+      "target": "csv_qe",
+      "note": "去掉tip/T特征, 30组随机搜索+起点验证"
+    },
+    "history_columns": [
+      "alpha",
+      "cv_r2"
+    ],
+    "history_head": [
+      {
+        "alpha": 0.7459343285726545,
+        "cv_r2": 0.2846498745834994
+      },
+      {
+        "alpha": 0.9719665086104126,
+        "cv_r2": 0.2846986601409955
+      },
+      {
+        "alpha": 66.1043139199165,
+        "cv_r2": 0.2601592675813897
+      }
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "r2": 0.3499382818067222,
+        "mae_mg_g": 155.0505259692932,
+        "rmse_mg_g": 206.29708413418695,
+        "n_validation": 612
+      },
+      {
+        "fold": 2,
+        "r2": 0.3166911571245937,
+        "mae_mg_g": 153.86098603757787,
+        "rmse_mg_g": 203.6018099365505,
+        "n_validation": 612
+      },
+      {
+        "fold": 3,
+        "r2": 0.2158238280279339,
+        "mae_mg_g": 152.75301508707724,
+        "rmse_mg_g": 196.53084165517717,
+        "n_validation": 612
+      },
+      {
+        "fold": 4,
+        "r2": 0.2845449261692101,
+        "mae_mg_g": 156.01473737422015,
+        "rmse_mg_g": 205.71677965386564,
+        "n_validation": 612
+      },
+      {
+        "fold": 5,
+        "r2": 0.2573634421970863,
+        "mae_mg_g": 155.6177666817106,
+        "rmse_mg_g": 205.87450857046983,
+        "n_validation": 612
+      }
+    ]
+  },
+  {
+    "task": "C",
+    "folder": "E:\\mzh3\\邪修中\\C\\SVR_去T_CV5",
+    "metrics": {
+      "model": "SVR",
+      "target": "csv_qe",
+      "rows": 3060,
+      "papers": 190,
+      "materials": 206,
+      "r2_oof": 0.7251652786403489,
+      "mae_oof_mg_g": 77.34911486998563,
+      "rmse_oof_mg_g": 126.74238696778629,
+      "r2_fold_mean": 0.7214852209729863,
+      "r2_fold_sd": 0.04586639483115289,
+      "best_cv_r2": 0.7214852209729863,
+      "trials": 30,
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+      "note": "去掉tip/T特征"
+    },
+    "parameters": {
+      "input_features": [
+        "main",
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F3",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__isonicotinic acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_pH",
+        "csv_temperature_K",
+        "csv_ce",
+        "MOF_dose_g_L"
+      ],
+      "search_space": {
+        "C": [
+          1,
+          2000,
+          "log"
+        ],
+        "epsilon": [
+          0.001,
+          0.1,
+          "log"
+        ],
+        "gamma": [
+          0.0001,
+          0.1,
+          "log"
+        ]
+      },
+      "best_model_parameters": {
+        "C": 667.7966173551416,
+        "epsilon": 0.030224771587863353,
+        "gamma": 0.0557933240579427
+      },
+      "target": "csv_qe",
+      "note": "去掉tip/T特征, 30组随机搜索+起点验证"
+    },
+    "history_columns": [
+      "C",
+      "epsilon",
+      "gamma",
+      "cv_r2"
+    ],
+    "history_head": [
+      {
+        "C": 1475.5279018684482,
+        "epsilon": 0.0014611747035083,
+        "gamma": 0.0029223825933796,
+        "cv_r2": 0.4530452124811587
+      },
+      {
+        "C": 5.297445779546785,
+        "epsilon": 0.0066992081787504,
+        "gamma": 0.0850954686588017,
+        "cv_r2": 0.1166553484388266
+      },
+      {
+        "C": 1.9654334225989936,
+        "epsilon": 0.009090331464314,
+        "gamma": 0.0917595938726549,
+        "cv_r2": 0.0076105342407201
+      }
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "r2": 0.8060356229178753,
+        "mae_mg_g": 70.74035361302698,
+        "rmse_mg_g": 112.687769283095,
+        "n_validation": 612
+      },
+      {
+        "fold": 2,
+        "r2": 0.6965139151073634,
+        "mae_mg_g": 81.7612375320218,
+        "rmse_mg_g": 135.6883325041427,
+        "n_validation": 612
+      },
+      {
+        "fold": 3,
+        "r2": 0.6889054716302823,
+        "mae_mg_g": 77.37489365119903,
+        "rmse_mg_g": 123.78558673974032,
+        "n_validation": 612
+      },
+      {
+        "fold": 4,
+        "r2": 0.7336796311554491,
+        "mae_mg_g": 77.38203588891368,
+        "rmse_mg_g": 125.5106922695629,
+        "n_validation": 612
+      },
+      {
+        "fold": 5,
+        "r2": 0.6822914640539606,
+        "mae_mg_g": 79.48705366476666,
+        "rmse_mg_g": 134.6569752713126,
+        "n_validation": 612
+      }
+    ]
+  },
+  {
+    "task": "C",
+    "folder": "E:\\mzh3\\邪修中\\C\\RF_去T_CV5",
+    "metrics": {
+      "model": "RF",
+      "target": "csv_qe",
+      "rows": 3060,
+      "papers": 190,
+      "materials": 206,
+      "r2_oof": 0.857995822402692,
+      "mae_oof_mg_g": 57.62902153324628,
+      "rmse_oof_mg_g": 91.10383170930768,
+      "r2_fold_mean": 0.8555818304304428,
+      "r2_fold_sd": 0.023937512135656723,
+      "best_cv_r2": 0.8555818304304428,
+      "trials": 30,
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+      "note": "去掉tip/T特征"
+    },
+    "parameters": {
+      "input_features": [
+        "main",
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F3",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__isonicotinic acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_pH",
+        "csv_temperature_K",
+        "csv_ce",
+        "MOF_dose_g_L"
+      ],
+      "search_space": {
+        "n_estimators": [
+          300,
+          800
+        ],
+        "max_depth": [
+          10,
+          30
+        ],
+        "min_samples_leaf": [
+          1,
+          5
+        ],
+        "max_features": [
+          0.3,
+          0.9
+        ],
+        "max_samples": [
+          0.6,
+          1.0
+        ]
+      },
+      "best_model_parameters": {
+        "n_estimators": 600,
+        "max_depth": 24,
+        "min_samples_leaf": 1,
+        "max_features": 0.6353953383064533,
+        "max_samples": 0.9650897308151523
+      },
+      "target": "csv_qe",
+      "note": "去掉tip/T特征, 30组随机搜索+起点验证"
+    },
+    "history_columns": [
+      "n_estimators",
+      "max_depth",
+      "min_samples_leaf",
+      "max_features",
+      "max_samples",
+      "cv_r2"
+    ],
+    "history_head": [
+      {
+        "n_estimators": 600.0,
+        "max_depth": 24,
+        "min_samples_leaf": 1,
+        "max_features": 0.6353953383064533,
+        "max_samples": 0.9650897308151524,
+        "cv_r2": 0.8555818304304428
+      },
+      {
+        "n_estimators": 409.6728174634615,
+        "max_depth": 23,
+        "min_samples_leaf": 5,
+        "max_features": 0.587573915808109,
+        "max_samples": 0.995020197695068,
+        "cv_r2": 0.7618604369261295
+      },
+      {
+        "n_estimators": 399.0705445094591,
+        "max_depth": 12,
+        "min_samples_leaf": 4,
+        "max_features": 0.7699376810854568,
+        "max_samples": 0.7209906358478197,
+        "cv_r2": 0.737124408604555
+      }
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "r2": 0.8942046560390152,
+        "mae_mg_g": 54.0304553829338,
+        "rmse_mg_g": 83.22409309794898,
+        "n_validation": 612
+      },
+      {
+        "fold": 2,
+        "r2": 0.8580906208873424,
+        "mae_mg_g": 58.89761709797881,
+        "rmse_mg_g": 92.78519051140287,
+        "n_validation": 612
+      },
+      {
+        "fold": 3,
+        "r2": 0.8187620843165018,
+        "mae_mg_g": 58.860914357381866,
+        "rmse_mg_g": 94.48185746437188,
+        "n_validation": 612
+      },
+      {
+        "fold": 4,
+        "r2": 0.8524219199713606,
+        "mae_mg_g": 58.00409812762901,
+        "rmse_mg_g": 93.4306695508928,
+        "n_validation": 612
+      },
+      {
+        "fold": 5,
+        "r2": 0.8544298709379934,
+        "mae_mg_g": 58.35202270030791,
+        "rmse_mg_g": 91.14871424068396,
+        "n_validation": 612
+      }
+    ]
+  },
+  {
+    "task": "C",
+    "folder": "E:\\mzh3\\邪修中\\C\\ExtraTrees_去T_CV5",
+    "metrics": {
+      "model": "ExtraTrees",
+      "target": "csv_qe",
+      "rows": 3060,
+      "papers": 190,
+      "materials": 206,
+      "r2_oof": 0.8530419159511782,
+      "mae_oof_mg_g": 57.67769574143955,
+      "rmse_oof_mg_g": 92.67931673359361,
+      "r2_fold_mean": 0.8512678379224845,
+      "r2_fold_sd": 0.023110700248799014,
+      "best_cv_r2": 0.8512678379224845,
+      "trials": 30,
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+      "note": "去掉tip/T特征"
+    },
+    "parameters": {
+      "input_features": [
+        "main",
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F3",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__isonicotinic acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_pH",
+        "csv_temperature_K",
+        "csv_ce",
+        "MOF_dose_g_L"
+      ],
+      "search_space": {
+        "n_estimators": [
+          300,
+          800
+        ],
+        "max_depth": [
+          12,
+          35
+        ],
+        "min_samples_leaf": [
+          1,
+          5
+        ],
+        "max_features": [
+          0.3,
+          0.95
+        ],
+        "max_samples": [
+          0.6,
+          1.0
+        ]
+      },
+      "best_model_parameters": {
+        "n_estimators": 400,
+        "max_depth": 26,
+        "min_samples_leaf": 1,
+        "max_features": 0.9551146974284537,
+        "max_samples": 0.8166262366082945
+      },
+      "target": "csv_qe",
+      "note": "去掉tip/T特征, 30组随机搜索+起点验证"
+    },
+    "history_columns": [
+      "n_estimators",
+      "max_depth",
+      "min_samples_leaf",
+      "max_features",
+      "max_samples",
+      "cv_r2"
+    ],
+    "history_head": [
+      {
+        "n_estimators": 400.0,
+        "max_depth": 26,
+        "min_samples_leaf": 1,
+        "max_features": 0.9551146974284536,
+        "max_samples": 0.8166262366082945,
+        "cv_r2": 0.8512678379224845
+      },
+      {
+        "n_estimators": 640.0656899375599,
+        "max_depth": 19,
+        "min_samples_leaf": 4,
+        "max_features": 0.4507505030721828,
+        "max_samples": 0.6653335339250326,
+        "cv_r2": 0.6852914979183734
+      },
+      {
+        "n_estimators": 717.5491442120829,
+        "max_depth": 15,
+        "min_samples_leaf": 4,
+        "max_features": 0.6896675385234683,
+        "max_samples": 0.9307709644969824,
+        "cv_r2": 0.7101783046705235
+      }
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "r2": 0.8964897430490861,
+        "mae_mg_g": 54.457536532615286,
+        "rmse_mg_g": 82.32040287568663,
+        "n_validation": 612
+      },
+      {
+        "fold": 2,
+        "r2": 0.8341271744555078,
+        "mae_mg_g": 60.95168965855815,
+        "rmse_mg_g": 100.31381221648569,
+        "n_validation": 612
+      },
+      {
+        "fold": 3,
+        "r2": 0.8368300367431325,
+        "mae_mg_g": 56.21323077930661,
+        "rmse_mg_g": 89.64870100444865,
+        "n_validation": 612
+      },
+      {
+        "fold": 4,
+        "r2": 0.8483305382065571,
+        "mae_mg_g": 56.98891543140618,
+        "rmse_mg_g": 94.71692845236474,
+        "n_validation": 612
+      },
+      {
+        "fold": 5,
+        "r2": 0.8405616971581381,
+        "mae_mg_g": 59.77710630531148,
+        "rmse_mg_g": 95.3917343000624,
+        "n_validation": 612
+      }
+    ]
+  },
+  {
+    "task": "C",
+    "folder": "E:\\mzh3\\邪修中\\C\\XGBoost_去T_CV5",
+    "metrics": {
+      "model": "XGBoost",
+      "target": "csv_qe",
+      "rows": 3060,
+      "papers": 190,
+      "materials": 206,
+      "r2_oof": 0.8860667474671571,
+      "mae_oof_mg_g": 49.59038261878856,
+      "rmse_oof_mg_g": 81.60397808585681,
+      "r2_fold_mean": 0.8845929300177492,
+      "r2_fold_sd": 0.018586718926938948,
+      "best_cv_r2": 0.8845929300177492,
+      "trials": 30,
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+      "note": "去掉tip/T特征"
+    },
+    "parameters": {
+      "input_features": [
+        "main",
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F3",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__isonicotinic acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_pH",
+        "csv_temperature_K",
+        "csv_ce",
+        "MOF_dose_g_L"
+      ],
+      "search_space": {
+        "n_estimators": [
+          400,
+          1200
+        ],
+        "max_depth": [
+          4,
+          12
+        ],
+        "learning_rate": [
+          0.01,
+          0.3,
+          "log"
+        ],
+        "subsample": [
+          0.6,
+          1.0
+        ],
+        "colsample_bytree": [
+          0.4,
+          1.0
+        ],
+        "min_child_weight": [
+          1,
+          15
+        ],
+        "reg_alpha": [
+          0.0001,
+          10,
+          "log"
+        ],
+        "reg_lambda": [
+          0.1,
+          20,
+          "log"
+        ]
+      },
+      "best_model_parameters": {
+        "n_estimators": 800,
+        "max_depth": 10,
+        "learning_rate": 0.08679899535328321,
+        "subsample": 0.8114703694565644,
+        "colsample_bytree": 0.6273054544472548,
+        "min_child_weight": 3,
+        "reg_alpha": 0.00030549660012408225,
+        "reg_lambda": 8.954792005518199
+      },
+      "target": "csv_qe",
+      "note": "去掉tip/T特征, 30组随机搜索+起点验证"
+    },
+    "history_columns": [
+      "n_estimators",
+      "max_depth",
+      "learning_rate",
+      "subsample",
+      "colsample_bytree",
+      "min_child_weight",
+      "reg_alpha",
+      "reg_lambda",
+      "cv_r2"
+    ],
+    "history_head": [
+      {
+        "n_estimators": 800.0,
+        "max_depth": 10,
+        "learning_rate": 0.0867989953532832,
+        "subsample": 0.8114703694565644,
+        "colsample_bytree": 0.6273054544472548,
+        "min_child_weight": 3,
+        "reg_alpha": 0.000305496600124,
+        "reg_lambda": 8.954792005518199,
+        "cv_r2": 0.8845929300177492
+      },
+      {
+        "n_estimators": 957.5125041352386,
+        "max_depth": 12,
+        "learning_rate": 0.0126419304249746,
+        "subsample": 0.9787164775553572,
+        "colsample_bytree": 0.9322080557759148,
+        "min_child_weight": 4,
+        "reg_alpha": 0.0152404153761016,
+        "reg_lambda": 7.549294504334476,
+        "cv_r2": 0.8709615569719109
+      },
+      {
+        "n_estimators": 573.5509065768522,
+        "max_depth": 6,
+        "learning_rate": 0.2861754777459858,
+        "subsample": 0.6745623240039701,
+        "colsample_bytree": 0.6904468631021516,
+        "min_child_weight": 14,
+        "reg_alpha": 0.007816080909067,
+        "reg_lambda": 12.96727437600739,
+        "cv_r2": 0.8655291732586894
+      }
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "r2": 0.9182970564885052,
+        "mae_mg_g": 45.37261264157551,
+        "rmse_mg_g": 73.13657955489057,
+        "n_validation": 612
+      },
+      {
+        "fold": 2,
+        "r2": 0.8711698723195542,
+        "mae_mg_g": 52.59624028950989,
+        "rmse_mg_g": 88.40601861284816,
+        "n_validation": 612
+      },
+      {
+        "fold": 3,
+        "r2": 0.8667237897696588,
+        "mae_mg_g": 50.618297828577816,
+        "rmse_mg_g": 81.02148719758529,
+        "n_validation": 612
+      },
+      {
+        "fold": 4,
+        "r2": 0.8767172914602475,
+        "mae_mg_g": 49.87486812368796,
+        "rmse_mg_g": 85.39444432152953,
+        "n_validation": 612
+      },
+      {
+        "fold": 5,
+        "r2": 0.8900566400507798,
+        "mae_mg_g": 49.48989421059164,
+        "rmse_mg_g": 79.21344767480842,
+        "n_validation": 612
+      }
+    ]
+  },
+  {
+    "task": "C",
+    "folder": "E:\\mzh3\\邪修中\\C\\CatBoost_去T_CV5",
+    "metrics": {
+      "model": "CatBoost",
+      "target": "csv_qe",
+      "rows": 3060,
+      "papers": 190,
+      "materials": 206,
+      "r2_oof": 0.8941783145912616,
+      "mae_oof_mg_g": 48.26258892424535,
+      "rmse_oof_mg_g": 78.64541705310855,
+      "r2_fold_mean": 0.8928533928785589,
+      "r2_fold_sd": 0.018978549232964,
+      "best_cv_r2": 0.8928533928785589,
+      "trials": 30,
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+      "note": "去掉tip/T特征"
+    },
+    "parameters": {
+      "input_features": [
+        "main",
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F3",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__isonicotinic acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_pH",
+        "csv_temperature_K",
+        "csv_ce",
+        "MOF_dose_g_L"
+      ],
+      "search_space": {
+        "iterations": [
+          300,
+          1000
+        ],
+        "depth": [
+          4,
+          12
+        ],
+        "learning_rate": [
+          0.01,
+          0.3,
+          "log"
+        ],
+        "l2_leaf_reg": [
+          0.01,
+          10,
+          "log"
+        ],
+        "random_strength": [
+          0.1,
+          2.0
+        ],
+        "bagging_temperature": [
+          0.0,
+          5.0
+        ]
+      },
+      "best_model_parameters": {
+        "iterations": 652.7702558346655,
+        "depth": 9,
+        "learning_rate": 0.09451851898237239,
+        "l2_leaf_reg": 0.9694381912609106,
+        "random_strength": 1.398048123021624,
+        "bagging_temperature": 1.020350218076086
+      },
+      "target": "csv_qe",
+      "note": "去掉tip/T特征, 30组随机搜索+起点验证"
+    },
+    "history_columns": [
+      "iterations",
+      "depth",
+      "learning_rate",
+      "l2_leaf_reg",
+      "random_strength",
+      "bagging_temperature",
+      "cv_r2"
+    ],
+    "history_head": [
+      {
+        "iterations": 500.0,
+        "depth": 10,
+        "learning_rate": 0.0923353338821083,
+        "l2_leaf_reg": 0.1050656898714179,
+        "random_strength": 0.4687226880265864,
+        "bagging_temperature": 1.0549022133173365,
+        "cv_r2": 0.8920910825258117
+      },
+      {
+        "iterations": 645.0099636332272,
+        "depth": 10,
+        "learning_rate": 0.0282247898700666,
+        "l2_leaf_reg": 2.5297270577466007,
+        "random_strength": 0.8680422118007174,
+        "bagging_temperature": 3.96409914099167,
+        "cv_r2": 0.8669518533219479
+      },
+      {
+        "iterations": 941.3156324553688,
+        "depth": 5,
+        "learning_rate": 0.044679702573805,
+        "l2_leaf_reg": 0.1678196033257053,
+        "random_strength": 1.1146805102871449,
+        "bagging_temperature": 2.805088731055021,
+        "cv_r2": 0.8441533043664402
+      }
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "r2": 0.9296255095618412,
+        "mae_mg_g": 43.59229212319399,
+        "rmse_mg_g": 67.87712287663764,
+        "n_validation": 612
+      },
+      {
+        "fold": 2,
+        "r2": 0.8791963412993061,
+        "mae_mg_g": 51.55436301262846,
+        "rmse_mg_g": 85.60776476382057,
+        "n_validation": 612
+      },
+      {
+        "fold": 3,
+        "r2": 0.8819774621614019,
+        "mae_mg_g": 48.322807096179766,
+        "rmse_mg_g": 76.24412202228564,
+        "n_validation": 612
+      },
+      {
+        "fold": 4,
+        "r2": 0.8808584977156161,
+        "mae_mg_g": 49.63515802434076,
+        "rmse_mg_g": 83.94794496542411,
+        "n_validation": 612
+      },
+      {
+        "fold": 5,
+        "r2": 0.8926091536546291,
+        "mae_mg_g": 48.20832436488382,
+        "rmse_mg_g": 78.28851328612662,
+        "n_validation": 612
+      }
+    ]
+  },
+  {
+    "task": "K",
+    "folder": "E:\\mzh3\\邪修中\\K\\Ridge_qt统一_去T_重跑",
+    "metrics": {
+      "model": "Ridge",
+      "target": "csv_qt",
+      "rows": 2645,
+      "papers": 191,
+      "materials": 208,
+      "r2_oof": 0.2770488948793418,
+      "mae_oof_mg_g": 160.1049079553227,
+      "rmse_oof_mg_g": 205.8287463572414,
+      "r2_fold_mean": 0.27716812279219843,
+      "r2_fold_sd": 0.039724715729510446,
+      "best_cv_r2": 0.27716812279219843,
+      "trials": 30,
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+      "note": "去掉tip/T特征"
+    },
+    "parameters": {
+      "input_features": [
+        "main",
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F3",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__isonicotinic acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_t",
+        "csv_pH",
+        "csv_temperature_K",
+        "MOF_dose_g_L"
+      ],
+      "search_space": {
+        "alpha": [
+          0.001,
+          100,
+          "log"
+        ]
+      },
+      "best_model_parameters": {
+        "alpha": 0.181532549512449
+      },
+      "target": "csv_qt",
+      "note": "去掉tip/T特征, 30组随机搜索+起点验证"
+    },
+    "history_columns": [
+      "alpha",
+      "cv_r2"
+    ],
+    "history_head": [
+      {
+        "alpha": 1.0,
+        "cv_r2": 0.2771540574014861
+      },
+      {
+        "alpha": 93.71096745859786,
+        "cv_r2": 0.2652893156652983
+      },
+      {
+        "alpha": 15.27157167771364,
+        "cv_r2": 0.2742327330924995
+      }
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "r2": 0.3216310264684596,
+        "mae_mg_g": 154.40494550141827,
+        "rmse_mg_g": 198.1982160372315,
+        "n_validation": 529
+      },
+      {
+        "fold": 2,
+        "r2": 0.2750476901324813,
+        "mae_mg_g": 162.6524211505989,
+        "rmse_mg_g": 210.0518794635103,
+        "n_validation": 529
+      },
+      {
+        "fold": 3,
+        "r2": 0.2584490309056548,
+        "mae_mg_g": 154.6571754219497,
+        "rmse_mg_g": 197.7301137375248,
+        "n_validation": 529
+      },
+      {
+        "fold": 4,
+        "r2": 0.2139785063560872,
+        "mae_mg_g": 171.63312623655918,
+        "rmse_mg_g": 221.0814136502811,
+        "n_validation": 529
+      },
+      {
+        "fold": 5,
+        "r2": 0.3167343600983093,
+        "mae_mg_g": 157.17687146608725,
+        "rmse_mg_g": 201.1189943496456,
+        "n_validation": 529
+      }
+    ]
+  },
+  {
+    "task": "K",
+    "folder": "E:\\mzh3\\邪修中\\K\\SVR_qt统一_去T_重跑",
+    "metrics": {
+      "model": "SVR",
+      "target": "csv_qt",
+      "rows": 2645,
+      "papers": 191,
+      "materials": 208,
+      "r2_oof": 0.677390197986827,
+      "mae_oof_mg_g": 83.1554944362189,
+      "rmse_oof_mg_g": 137.49608905358275,
+      "r2_fold_mean": 0.6783407323915899,
+      "r2_fold_sd": 0.04901219277775742,
+      "best_cv_r2": 0.6783407323915899,
+      "trials": 30,
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+      "note": "去掉tip/T特征"
+    },
+    "parameters": {
+      "input_features": [
+        "main",
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F3",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__isonicotinic acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_t",
+        "csv_pH",
+        "csv_temperature_K",
+        "MOF_dose_g_L"
+      ],
+      "search_space": {
+        "C": [
+          1,
+          2000,
+          "log"
+        ],
+        "epsilon": [
+          0.001,
+          0.1,
+          "log"
+        ],
+        "gamma": [
+          0.0001,
+          0.1,
+          "log"
+        ]
+      },
+      "best_model_parameters": {
+        "C": 440.76396820340864,
+        "epsilon": 0.006433769330379377,
+        "gamma": 0.023903389298233352
+      },
+      "target": "csv_qt",
+      "note": "去掉tip/T特征, 30组随机搜索+起点验证"
+    },
+    "history_columns": [
+      "C",
+      "epsilon",
+      "gamma",
+      "cv_r2"
+    ],
+    "history_head": [
+      {
+        "C": 500.0,
+        "epsilon": 0.01,
+        "gamma": 0.01,
+        "cv_r2": 0.5574911355491581
+      },
+      {
+        "C": 2.361001238713828,
+        "epsilon": 0.0049193954254299,
+        "gamma": 0.0207789956309204,
+        "cv_r2": 0.0296510028719944
+      },
+      {
+        "C": 1416.466026122751,
+        "epsilon": 0.0015005485346128,
+        "gamma": 0.0034803335216248,
+        "cv_r2": 0.4771289913465951
+      }
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "r2": 0.7054539903782069,
+        "mae_mg_g": 80.60417128920577,
+        "rmse_mg_g": 130.60004441884314,
+        "n_validation": 529
+      },
+      {
+        "fold": 2,
+        "r2": 0.6863342113380068,
+        "mae_mg_g": 82.57963877341538,
+        "rmse_mg_g": 138.16735040534775,
+        "n_validation": 529
+      },
+      {
+        "fold": 3,
+        "r2": 0.6821537312459085,
+        "mae_mg_g": 80.05765222536074,
+        "rmse_mg_g": 129.4526280406089,
+        "n_validation": 529
+      },
+      {
+        "fold": 4,
+        "r2": 0.5866311625505598,
+        "mae_mg_g": 93.8278635970142,
+        "rmse_mg_g": 160.32597462217333,
+        "n_validation": 529
+      },
+      {
+        "fold": 5,
+        "r2": 0.7311305664452674,
+        "mae_mg_g": 78.70814629609833,
+        "rmse_mg_g": 126.16213045024968,
+        "n_validation": 529
+      }
+    ]
+  },
+  {
+    "task": "K",
+    "folder": "E:\\mzh3\\邪修中\\K\\RF_qt统一_去T_重跑",
+    "metrics": {
+      "model": "RF",
+      "target": "csv_qt",
+      "rows": 2645,
+      "papers": 191,
+      "materials": 208,
+      "r2_oof": 0.8486850401107056,
+      "mae_oof_mg_g": 56.409681552718375,
+      "rmse_oof_mg_g": 94.1656480245446,
+      "r2_fold_mean": 0.8486750435785293,
+      "r2_fold_sd": 0.02785722279175412,
+      "best_cv_r2": 0.8486750435785293,
+      "trials": 30,
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+      "note": "去掉tip/T特征"
+    },
+    "parameters": {
+      "input_features": [
+        "main",
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F3",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__isonicotinic acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_t",
+        "csv_pH",
+        "csv_temperature_K",
+        "MOF_dose_g_L"
+      ],
+      "search_space": {
+        "n_estimators": [
+          300,
+          800
+        ],
+        "max_depth": [
+          10,
+          30
+        ],
+        "min_samples_leaf": [
+          1,
+          5
+        ],
+        "max_features": [
+          0.3,
+          0.9
+        ],
+        "max_samples": [
+          0.6,
+          1.0
+        ]
+      },
+      "best_model_parameters": {
+        "n_estimators": 598.4083608502596,
+        "max_depth": 23,
+        "min_samples_leaf": 1,
+        "max_features": 0.8509329209668417,
+        "max_samples": 0.8758514013857566
+      },
+      "target": "csv_qt",
+      "note": "去掉tip/T特征, 30组随机搜索+起点验证"
+    },
+    "history_columns": [
+      "n_estimators",
+      "max_depth",
+      "min_samples_leaf",
+      "max_features",
+      "max_samples",
+      "cv_r2"
+    ],
+    "history_head": [
+      {
+        "n_estimators": 500.0,
+        "max_depth": 20,
+        "min_samples_leaf": 1,
+        "max_features": 0.6,
+        "max_samples": 0.9,
+        "cv_r2": 0.8466726826141441
+      },
+      {
+        "n_estimators": 409.6728174634615,
+        "max_depth": 23,
+        "min_samples_leaf": 5,
+        "max_features": 0.587573915808109,
+        "max_samples": 0.995020197695068,
+        "cv_r2": 0.758704792197216
+      },
+      {
+        "n_estimators": 399.0705445094591,
+        "max_depth": 12,
+        "min_samples_leaf": 4,
+        "max_features": 0.7699376810854568,
+        "max_samples": 0.7209906358478197,
+        "cv_r2": 0.6983660423696951
+      }
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "r2": 0.8371058105837114,
+        "mae_mg_g": 58.25504220329546,
+        "rmse_mg_g": 97.12243211534852,
+        "n_validation": 529
+      },
+      {
+        "fold": 2,
+        "r2": 0.8657759895760536,
+        "mae_mg_g": 55.98704024574022,
+        "rmse_mg_g": 90.3830428359462,
+        "n_validation": 529
+      },
+      {
+        "fold": 3,
+        "r2": 0.8397986132991059,
+        "mae_mg_g": 54.68678215639544,
+        "rmse_mg_g": 91.90421889477028,
+        "n_validation": 529
+      },
+      {
+        "fold": 4,
+        "r2": 0.8093019991800527,
+        "mae_mg_g": 61.7112481057039,
+        "rmse_mg_g": 108.8950383084948,
+        "n_validation": 529
+      },
+      {
+        "fold": 5,
+        "r2": 0.8913928052537228,
+        "mae_mg_g": 51.408295052456886,
+        "rmse_mg_g": 80.18397762808182,
+        "n_validation": 529
+      }
+    ]
+  },
+  {
+    "task": "K",
+    "folder": "E:\\mzh3\\邪修中\\K\\ExtraTrees_qt统一_去T_重跑",
+    "metrics": {
+      "model": "ExtraTrees",
+      "target": "csv_qt",
+      "rows": 2645,
+      "papers": 191,
+      "materials": 208,
+      "r2_oof": 0.8445440379160096,
+      "mae_oof_mg_g": 54.589366512400375,
+      "rmse_oof_mg_g": 95.44545603900164,
+      "r2_fold_mean": 0.8441621253588192,
+      "r2_fold_sd": 0.026402317756816406,
+      "best_cv_r2": 0.8441621253588192,
+      "trials": 30,
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+      "note": "去掉tip/T特征"
+    },
+    "parameters": {
+      "input_features": [
+        "main",
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F3",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__isonicotinic acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_t",
+        "csv_pH",
+        "csv_temperature_K",
+        "MOF_dose_g_L"
+      ],
+      "search_space": {
+        "n_estimators": [
+          300,
+          800
+        ],
+        "max_depth": [
+          12,
+          35
+        ],
+        "min_samples_leaf": [
+          1,
+          5
+        ],
+        "max_features": [
+          0.3,
+          0.95
+        ],
+        "max_samples": [
+          0.6,
+          1.0
+        ]
+      },
+      "best_model_parameters": {
+        "n_estimators": 392.12281627036606,
+        "max_depth": 31,
+        "min_samples_leaf": 1,
+        "max_features": 0.36815247637182,
+        "max_samples": 0.9183904461362292
+      },
+      "target": "csv_qt",
+      "note": "去掉tip/T特征, 30组随机搜索+起点验证"
+    },
+    "history_columns": [
+      "n_estimators",
+      "max_depth",
+      "min_samples_leaf",
+      "max_features",
+      "max_samples",
+      "cv_r2"
+    ],
+    "history_head": [
+      {
+        "n_estimators": 600.0,
+        "max_depth": 24,
+        "min_samples_leaf": 1,
+        "max_features": 0.7,
+        "max_samples": 0.85,
+        "cv_r2": 0.8419620150716325
+      },
+      {
+        "n_estimators": 640.0656899375599,
+        "max_depth": 19,
+        "min_samples_leaf": 4,
+        "max_features": 0.4507505030721828,
+        "max_samples": 0.6653335339250326,
+        "cv_r2": 0.6866579578907005
+      },
+      {
+        "n_estimators": 717.5491442120829,
+        "max_depth": 15,
+        "min_samples_leaf": 4,
+        "max_features": 0.6896675385234683,
+        "max_samples": 0.9307709644969824,
+        "cv_r2": 0.6943904241563952
+      }
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "r2": 0.8396753537137652,
+        "mae_mg_g": 54.89537589119357,
+        "rmse_mg_g": 96.35336761127296,
+        "n_validation": 529
+      },
+      {
+        "fold": 2,
+        "r2": 0.8582647564390578,
+        "mae_mg_g": 55.06452111551285,
+        "rmse_mg_g": 92.87755626141312,
+        "n_validation": 529
+      },
+      {
+        "fold": 3,
+        "r2": 0.820924411717172,
+        "mae_mg_g": 54.255959011641885,
+        "rmse_mg_g": 97.1673829932012,
+        "n_validation": 529
+      },
+      {
+        "fold": 4,
+        "r2": 0.8146851219604563,
+        "mae_mg_g": 59.80846685814125,
+        "rmse_mg_g": 107.34706282975203,
+        "n_validation": 529
+      },
+      {
+        "fold": 5,
+        "r2": 0.887260982963645,
+        "mae_mg_g": 48.92250968551232,
+        "rmse_mg_g": 81.6949892552641,
+        "n_validation": 529
+      }
+    ]
+  },
+  {
+    "task": "K",
+    "folder": "E:\\mzh3\\邪修中\\K\\XGBoost_qt统一_去T_重跑",
+    "metrics": {
+      "model": "XGBoost",
+      "dataset": "K",
+      "target": "csv_qt",
+      "target_label": "qt (mg/g)",
+      "rows": 2579,
+      "papers": 185,
+      "materials": 202,
+      "r2_oof": 0.8889940864636395,
+      "mae_oof": 24.485843140334197,
+      "rmse_oof": 88.70055909820947,
+      "r2_fold_mean": 0.9075071327525384,
+      "r2_fold_sd": 0.11944472540271799,
+      "best_cv_r2": 0.9075071327525384,
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+      "optimization": "new Optuna TPE Bayesian optimization after removing T; same 5-fold CV",
+      "n_trials": 30,
+      "numeric_transform": "none; target and conditions retain original units",
+      "T_feature": "removed"
+    },
+    "parameters": {
+      "categorical_feature": [
+        "main"
+      ],
+      "numeric_features": [
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F3",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__isonicotinic acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_t",
+        "csv_pH",
+        "csv_temperature_K",
+        "MOF_dose_g_L"
+      ],
+      "all_input_features": [
+        "main",
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F3",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__isonicotinic acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_t",
+        "csv_pH",
+        "csv_temperature_K",
+        "MOF_dose_g_L"
+      ],
+      "target": "csv_qt",
+      "best_model_parameters": {
+        "n_estimators": 600,
+        "max_depth": 10,
+        "learning_rate": 0.08327648265697182,
+        "subsample": 0.7577662887897096,
+        "colsample_bytree": 0.6245931344300522,
+        "min_child_weight": 2,
+        "reg_alpha": 0.0003187625394136429,
+        "reg_lambda": 7.738003869729689
+      },
+      "optimization": "new Optuna TPE Bayesian optimization after removing T; same 5-fold CV",
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026"
+    },
+    "history_columns": [
+      "number",
+      "value",
+      "datetime_start",
+      "datetime_complete",
+      "duration",
+      "params_colsample_bytree",
+      "params_learning_rate",
+      "params_max_depth",
+      "params_min_child_weight",
+      "params_n_estimators",
+      "params_reg_alpha",
+      "params_reg_lambda",
+      "params_subsample",
+      "system_attrs_tpe:relative_params:0",
+      "state"
+    ],
+    "history_head": [
+      {
+        "number": 0,
+        "value": 0.9059866898898136,
+        "datetime_start": "2026-09-28 09:28:46.235896",
+        "datetime_complete": "2026-09-28 09:28:50.197625",
+        "duration": "0 days 00:00:03.961729",
+        "params_colsample_bytree": 0.5780093202212182,
+        "params_learning_rate": 0.0896078536536812,
+        "params_max_depth": 10,
+        "params_min_child_weight": 2,
+        "params_n_estimators": 500,
+        "params_reg_alpha": 0.000187470592218,
+        "params_reg_lambda": 9.8423157385026,
+        "params_subsample": 0.8394633936788146,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      },
+      {
+        "number": 1,
+        "value": 0.8737283349819591,
+        "datetime_start": "2026-09-28 09:28:50.197625",
+        "datetime_complete": "2026-09-28 09:28:53.496619",
+        "duration": "0 days 00:00:03.298994",
+        "params_colsample_bytree": 0.9162213204002108,
+        "params_learning_rate": 0.0106360665125402,
+        "params_max_depth": 8,
+        "params_min_child_weight": 3,
+        "params_n_estimators": 700,
+        "params_reg_alpha": 0.0007151383480402,
+        "params_reg_lambda": 0.2642526057549916,
+        "params_subsample": 0.9879639408647978,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      },
+      {
+        "number": 2,
+        "value": 0.8928102288432432,
+        "datetime_start": "2026-09-28 09:28:53.496619",
+        "datetime_complete": "2026-09-28 09:28:55.562949",
+        "duration": "0 days 00:00:02.066330",
+        "params_colsample_bytree": 0.8059264473611898,
+        "params_learning_rate": 0.0364731628491121,
+        "params_max_depth": 7,
+        "params_min_child_weight": 2,
+        "params_n_estimators": 500,
+        "params_reg_alpha": 0.0023592770353071,
+        "params_reg_lambda": 0.6966418981413739,
+        "params_subsample": 0.7164916560792167,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      }
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "r2": 0.9562084100824833,
+        "mae": 23.346003254737955,
+        "rmse": 50.48883604206153,
+        "n_validation": 516
+      },
+      {
+        "fold": 2,
+        "r2": 0.959076050522603,
+        "mae": 19.826505173721525,
+        "rmse": 49.9730005666762,
+        "n_validation": 516
+      },
+      {
+        "fold": 3,
+        "r2": 0.968186687489204,
+        "mae": 22.85260156930092,
+        "rmse": 46.16200382440719,
+        "n_validation": 516
+      },
+      {
+        "fold": 4,
+        "r2": 0.6939860578446958,
+        "mae": 32.98523926782718,
+        "rmse": 171.09765678424426,
+        "n_validation": 516
+      },
+      {
+        "fold": 5,
+        "r2": 0.9600784578237062,
+        "mae": 23.41679463665767,
+        "rmse": 53.64245276484647,
+        "n_validation": 515
+      }
+    ]
+  },
+  {
+    "task": "K",
+    "folder": "E:\\mzh3\\邪修中\\K\\CatBoost_qt统一_去T_重跑",
+    "metrics": {
+      "model": "CatBoost",
+      "target": "csv_qt",
+      "rows": 2645,
+      "papers": 191,
+      "materials": 208,
+      "r2_oof": 0.8861413023760192,
+      "mae_oof_mg_g": 49.22856523753837,
+      "rmse_oof_mg_g": 81.683562739174,
+      "r2_fold_mean": 0.8859152724203533,
+      "r2_fold_sd": 0.019564475511025043,
+      "best_cv_r2": 0.8859152724203533,
+      "trials": 30,
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+      "note": "去掉tip/T特征"
+    },
+    "parameters": {
+      "input_features": [
+        "main",
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F3",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__isonicotinic acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_t",
+        "csv_pH",
+        "csv_temperature_K",
+        "MOF_dose_g_L"
+      ],
+      "search_space": {
+        "iterations": [
+          300,
+          1000
+        ],
+        "depth": [
+          4,
+          12
+        ],
+        "learning_rate": [
+          0.01,
+          0.3,
+          "log"
+        ],
+        "l2_leaf_reg": [
+          0.01,
+          10,
+          "log"
+        ],
+        "random_strength": [
+          0.1,
+          2.0
+        ],
+        "bagging_temperature": [
+          0.0,
+          5.0
+        ]
+      },
+      "best_model_parameters": {
+        "iterations": 763.5213624682428,
+        "depth": 10,
+        "learning_rate": 0.07878763013337976,
+        "l2_leaf_reg": 2.32060195341559,
+        "random_strength": 1.872086712234067,
+        "bagging_temperature": 3.187647706989558
+      },
+      "target": "csv_qt",
+      "note": "去掉tip/T特征, 30组随机搜索+起点验证"
+    },
+    "history_columns": [
+      "iterations",
+      "depth",
+      "learning_rate",
+      "l2_leaf_reg",
+      "random_strength",
+      "bagging_temperature",
+      "cv_r2"
+    ],
+    "history_head": [
+      {
+        "iterations": 800.0,
+        "depth": 8,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 1.0,
+        "random_strength": 0.5,
+        "bagging_temperature": 1.0,
+        "cv_r2": 0.8751304513901031
+      },
+      {
+        "iterations": 763.5213624682428,
+        "depth": 10,
+        "learning_rate": 0.0787876301333797,
+        "l2_leaf_reg": 2.32060195341559,
+        "random_strength": 1.872086712234067,
+        "bagging_temperature": 3.187647706989558,
+        "cv_r2": 0.8859152724203533
+      },
+      {
+        "iterations": 326.8307744625379,
+        "depth": 7,
+        "learning_rate": 0.0224133237266403,
+        "l2_leaf_reg": 0.095633102440957,
+        "random_strength": 1.6571743574003266,
+        "bagging_temperature": 4.134176034345724,
+        "cv_r2": 0.7069133838332684
+      }
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "r2": 0.8680122722454153,
+        "mae_mg_g": 52.04314878528849,
+        "rmse_mg_g": 87.42457486271731,
+        "n_validation": 529
+      },
+      {
+        "fold": 2,
+        "r2": 0.8899108433751407,
+        "mae_mg_g": 51.319347475633855,
+        "rmse_mg_g": 81.85479499465053,
+        "n_validation": 529
+      },
+      {
+        "fold": 3,
+        "r2": 0.876548821446119,
+        "mae_mg_g": 47.56782619716093,
+        "rmse_mg_g": 80.67703576016555,
+        "n_validation": 529
+      },
+      {
+        "fold": 4,
+        "r2": 0.8728662412576891,
+        "mae_mg_g": 53.03719677444514,
+        "rmse_mg_g": 88.91304127223474,
+        "n_validation": 529
+      },
+      {
+        "fold": 5,
+        "r2": 0.922238183777402,
+        "mae_mg_g": 42.17530695516341,
+        "rmse_mg_g": 67.84869451916225,
+        "n_validation": 529
+      }
+    ]
+  },
+  {
+    "task": "R",
+    "folder": "E:\\mzh3\\邪修中\\R\\Ridge_RetentionPercent_去T_CV5",
+    "metrics": {
+      "model": "Ridge",
+      "dataset": "R",
+      "target": "csv_retention_percent",
+      "target_label": "retention percent (%)",
+      "rows": 2013,
+      "papers": 151,
+      "materials": 160,
+      "r2_oof": 0.3610993731400113,
+      "mae_oof": 6.622722774095024,
+      "rmse_oof": 9.373900504827487,
+      "r2_fold_mean": 0.35938850793009436,
+      "r2_fold_sd": 0.06521776172859486,
+      "best_cv_r2": 0.35938850793009436,
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+      "optimization": "new Optuna TPE Bayesian optimization after removing T; same 5-fold CV",
+      "n_trials": 30,
+      "numeric_transform": "none; target and conditions retain original units",
+      "T_feature": "removed"
+    },
+    "parameters": {
+      "categorical_feature": [
+        "main"
+      ],
+      "numeric_features": [
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_cycle",
+        "csv_pH",
+        "csv_temperature_K",
+        "MOF_dose_g_L"
+      ],
+      "all_input_features": [
+        "main",
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_cycle",
+        "csv_pH",
+        "csv_temperature_K",
+        "MOF_dose_g_L"
+      ],
+      "target": "csv_retention_percent",
+      "best_model_parameters": {
+        "alpha": 0.3157911429686788
+      },
+      "optimization": "new Optuna TPE Bayesian optimization after removing T; same 5-fold CV",
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026"
+    },
+    "history_columns": [
+      "number",
+      "value",
+      "datetime_start",
+      "datetime_complete",
+      "duration",
+      "params_alpha",
+      "system_attrs_tpe:relative_params:0",
+      "state"
+    ],
+    "history_head": [
+      {
+        "number": 0,
+        "value": 0.3590480985122601,
+        "datetime_start": "2026-09-28 09:30:26.493440",
+        "datetime_complete": "2026-09-28 09:30:26.626662",
+        "duration": "0 days 00:00:00.133222",
+        "params_alpha": 0.7459343285726545,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      },
+      {
+        "number": 1,
+        "value": 0.1920776536904336,
+        "datetime_start": "2026-09-28 09:30:26.626662",
+        "datetime_complete": "2026-09-28 09:30:26.740465",
+        "duration": "0 days 00:00:00.113803",
+        "params_alpha": 566.9849511478844,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      },
+      {
+        "number": 2,
+        "value": 0.3136485217212683,
+        "datetime_start": "2026-09-28 09:30:26.740465",
+        "datetime_complete": "2026-09-28 09:30:26.896411",
+        "duration": "0 days 00:00:00.155946",
+        "params_alpha": 45.70563099801453,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      }
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "r2": 0.321541031643625,
+        "mae": 6.772338380806644,
+        "rmse": 9.827268411934591,
+        "n_validation": 403
+      },
+      {
+        "fold": 2,
+        "r2": 0.4626351481838902,
+        "mae": 6.5811166598692745,
+        "rmse": 8.713512015875429,
+        "n_validation": 403
+      },
+      {
+        "fold": 3,
+        "r2": 0.3851818364510762,
+        "mae": 6.27119775458067,
+        "rmse": 9.111280855959418,
+        "n_validation": 403
+      },
+      {
+        "fold": 4,
+        "r2": 0.3207849169503283,
+        "mae": 6.428727833909355,
+        "rmse": 8.704442924485608,
+        "n_validation": 402
+      },
+      {
+        "fold": 5,
+        "r2": 0.3067996064215523,
+        "mae": 7.060839001326659,
+        "rmse": 10.396486252051828,
+        "n_validation": 402
+      }
+    ]
+  },
+  {
+    "task": "R",
+    "folder": "E:\\mzh3\\邪修中\\R\\SVR_RetentionPercent_去T_CV5",
+    "metrics": {
+      "model": "SVR",
+      "dataset": "R",
+      "target": "csv_retention_percent",
+      "target_label": "retention percent (%)",
+      "rows": 2013,
+      "papers": 151,
+      "materials": 160,
+      "r2_oof": 0.9433702374080992,
+      "mae_oof": 0.9809107978940235,
+      "rmse_oof": 2.790782897901697,
+      "r2_fold_mean": 0.9434200569650525,
+      "r2_fold_sd": 0.02324792815384636,
+      "best_cv_r2": 0.9434200569650525,
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+      "optimization": "new Optuna TPE Bayesian optimization after removing T; same 5-fold CV",
+      "n_trials": 30,
+      "numeric_transform": "none; target and conditions retain original units",
+      "T_feature": "removed"
+    },
+    "parameters": {
+      "categorical_feature": [
+        "main"
+      ],
+      "numeric_features": [
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_cycle",
+        "csv_pH",
+        "csv_temperature_K",
+        "MOF_dose_g_L"
+      ],
+      "all_input_features": [
+        "main",
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_cycle",
+        "csv_pH",
+        "csv_temperature_K",
+        "MOF_dose_g_L"
+      ],
+      "target": "csv_retention_percent",
+      "best_model_parameters": {
+        "C": 991.82986819582,
+        "epsilon": 0.001741833887678173,
+        "gamma": 0.01800663083324358
+      },
+      "optimization": "new Optuna TPE Bayesian optimization after removing T; same 5-fold CV",
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026"
+    },
+    "history_columns": [
+      "number",
+      "value",
+      "datetime_start",
+      "datetime_complete",
+      "duration",
+      "params_C",
+      "params_epsilon",
+      "params_gamma",
+      "system_attrs_tpe:relative_params:0",
+      "state"
+    ],
+    "history_head": [
+      {
+        "number": 0,
+        "value": 0.369630168145845,
+        "datetime_start": "2026-09-28 09:30:30.962058",
+        "datetime_complete": "2026-09-28 09:30:31.900916",
+        "duration": "0 days 00:00:00.938858",
+        "params_C": 4.082331665966554,
+        "params_epsilon": 6.351221010640703,
+        "params_gamma": 0.4570563099801455,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      },
+      {
+        "number": 1,
+        "value": 0.2999408477563213,
+        "datetime_start": "2026-09-28 09:30:31.900916",
+        "datetime_complete": "2026-09-28 09:30:33.155248",
+        "duration": "0 days 00:00:01.254332",
+        "params_C": 37.57059713802644,
+        "params_epsilon": 0.0042079886696066,
+        "params_gamma": 0.0006025215736203,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      },
+      {
+        "number": 2,
+        "value": 0.0027754099045119,
+        "datetime_start": "2026-09-28 09:30:33.155248",
+        "datetime_complete": "2026-09-28 09:30:34.420062",
+        "duration": "0 days 00:00:01.264814",
+        "params_C": 0.1777539900734822,
+        "params_epsilon": 2.9154431891537547,
+        "params_gamma": 0.1012919795684573,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      }
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "r2": 0.9436943550820628,
+        "mae": 1.0978419531065922,
+        "rmse": 2.8310464357070333,
+        "n_validation": 403
+      },
+      {
+        "fold": 2,
+        "r2": 0.9675948854376972,
+        "mae": 0.8276993360274224,
+        "rmse": 2.139761586738913,
+        "n_validation": 403
+      },
+      {
+        "fold": 3,
+        "r2": 0.9056791404397148,
+        "mae": 0.9921766402410456,
+        "rmse": 3.5686993706623458,
+        "n_validation": 403
+      },
+      {
+        "fold": 4,
+        "r2": 0.9557516560505545,
+        "mae": 0.9165071050250324,
+        "rmse": 2.221702132182044,
+        "n_validation": 402
+      },
+      {
+        "fold": 5,
+        "r2": 0.9443802478152334,
+        "mae": 1.0703911801056138,
+        "rmse": 2.944907838891192,
+        "n_validation": 402
+      }
+    ]
+  },
+  {
+    "task": "R",
+    "folder": "E:\\mzh3\\邪修中\\R\\RF_RetentionPercent_去T_CV5",
+    "metrics": {
+      "model": "RF",
+      "dataset": "R",
+      "target": "csv_retention_percent",
+      "target_label": "retention percent (%)",
+      "rows": 2013,
+      "papers": 151,
+      "materials": 160,
+      "r2_oof": 0.8799646346279105,
+      "mae_oof": 1.6381132171248731,
+      "rmse_oof": 4.063107303236559,
+      "r2_fold_mean": 0.8791544805002822,
+      "r2_fold_sd": 0.050286998749038275,
+      "best_cv_r2": 0.8791544805002822,
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+      "optimization": "new Optuna TPE Bayesian optimization after removing T; same 5-fold CV",
+      "n_trials": 30,
+      "numeric_transform": "none; target and conditions retain original units",
+      "T_feature": "removed"
+    },
+    "parameters": {
+      "categorical_feature": [
+        "main"
+      ],
+      "numeric_features": [
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_cycle",
+        "csv_pH",
+        "csv_temperature_K",
+        "MOF_dose_g_L"
+      ],
+      "all_input_features": [
+        "main",
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_cycle",
+        "csv_pH",
+        "csv_temperature_K",
+        "MOF_dose_g_L"
+      ],
+      "target": "csv_retention_percent",
+      "best_model_parameters": {
+        "n_estimators": 600,
+        "max_depth": 24,
+        "min_samples_leaf": 1,
+        "max_features": 0.6054707051787469,
+        "max_samples": 0.9650897308151523
+      },
+      "optimization": "new Optuna TPE Bayesian optimization after removing T; same 5-fold CV",
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026"
+    },
+    "history_columns": [
+      "number",
+      "value",
+      "datetime_start",
+      "datetime_complete",
+      "duration",
+      "params_max_depth",
+      "params_max_features",
+      "params_max_samples",
+      "params_min_samples_leaf",
+      "params_n_estimators",
+      "system_attrs_tpe:relative_params:0",
+      "state"
+    ],
+    "history_head": [
+      {
+        "number": 0,
+        "value": 0.7098341274760679,
+        "datetime_start": "2026-09-28 09:41:48.771539",
+        "datetime_complete": "2026-09-28 09:41:51.868678",
+        "duration": "0 days 00:00:03.097139",
+        "params_max_depth": 29,
+        "params_max_features": 0.7190609389379257,
+        "params_max_samples": 0.7468055921327309,
+        "params_min_samples_leaf": 6,
+        "params_n_estimators": 500,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      },
+      {
+        "number": 1,
+        "value": 0.477098775939579,
+        "datetime_start": "2026-09-28 09:41:51.868678",
+        "datetime_complete": "2026-09-28 09:41:54.642079",
+        "duration": "0 days 00:00:02.773401",
+        "params_max_depth": 5,
+        "params_max_features": 0.7207805082202461,
+        "params_max_samples": 0.9124217733388136,
+        "params_min_samples_leaf": 7,
+        "params_n_estimators": 400,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      },
+      {
+        "number": 2,
+        "value": 0.6738611510886813,
+        "datetime_start": "2026-09-28 09:41:54.642079",
+        "datetime_complete": "2026-09-28 09:41:56.674604",
+        "duration": "0 days 00:00:02.032525",
+        "params_max_depth": 30,
+        "params_max_features": 0.4486373774747932,
+        "params_max_samples": 0.7545474901621302,
+        "params_min_samples_leaf": 7,
+        "params_n_estimators": 300,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      }
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "r2": 0.9008569343499904,
+        "mae": 1.6078780190613566,
+        "rmse": 3.756662642980464,
+        "n_validation": 403
+      },
+      {
+        "fold": 2,
+        "r2": 0.9176194064731094,
+        "mae": 1.5712971975202954,
+        "rmse": 3.411701798754999,
+        "n_validation": 403
+      },
+      {
+        "fold": 3,
+        "r2": 0.7909934197255066,
+        "mae": 1.5769243810683995,
+        "rmse": 5.312342521364229,
+        "n_validation": 403
+      },
+      {
+        "fold": 4,
+        "r2": 0.8927118804299521,
+        "mae": 1.5407394927841358,
+        "rmse": 3.4594984306076504,
+        "n_validation": 402
+      },
+      {
+        "fold": 5,
+        "r2": 0.8935907615228528,
+        "mae": 1.8941206271646167,
+        "rmse": 4.07330425498709,
+        "n_validation": 402
+      }
+    ]
+  },
+  {
+    "task": "R",
+    "folder": "E:\\mzh3\\邪修中\\R\\ExtraTrees_RetentionPercent_去T_CV5",
+    "metrics": {
+      "model": "ExtraTrees",
+      "dataset": "R",
+      "target": "csv_retention_percent",
+      "target_label": "retention percent (%)",
+      "rows": 2013,
+      "papers": 151,
+      "materials": 160,
+      "r2_oof": 0.893025587012583,
+      "mae_oof": 1.607994555425703,
+      "rmse_oof": 3.8356912203526026,
+      "r2_fold_mean": 0.8927445774363612,
+      "r2_fold_sd": 0.02153584965197524,
+      "best_cv_r2": 0.8927445774363612,
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+      "optimization": "new Optuna TPE Bayesian optimization after removing T; same 5-fold CV",
+      "n_trials": 30,
+      "numeric_transform": "none; target and conditions retain original units",
+      "T_feature": "removed"
+    },
+    "parameters": {
+      "categorical_feature": [
+        "main"
+      ],
+      "numeric_features": [
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_cycle",
+        "csv_pH",
+        "csv_temperature_K",
+        "MOF_dose_g_L"
+      ],
+      "all_input_features": [
+        "main",
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_cycle",
+        "csv_pH",
+        "csv_temperature_K",
+        "MOF_dose_g_L"
+      ],
+      "target": "csv_retention_percent",
+      "best_model_parameters": {
+        "n_estimators": 700,
+        "max_depth": 28,
+        "min_samples_leaf": 1,
+        "max_features": 0.586241970435792,
+        "max_samples": 0.9651767137384053
+      },
+      "optimization": "new Optuna TPE Bayesian optimization after removing T; same 5-fold CV",
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026"
+    },
+    "history_columns": [
+      "number",
+      "value",
+      "datetime_start",
+      "datetime_complete",
+      "duration",
+      "params_max_depth",
+      "params_max_features",
+      "params_max_samples",
+      "params_min_samples_leaf",
+      "params_n_estimators",
+      "system_attrs_tpe:relative_params:0",
+      "state"
+    ],
+    "history_head": [
+      {
+        "number": 0,
+        "value": 0.6624647633663707,
+        "datetime_start": "2026-09-28 09:50:38.485919",
+        "datetime_complete": "2026-09-28 09:50:41.960612",
+        "duration": "0 days 00:00:03.474693",
+        "params_max_depth": 29,
+        "params_max_features": 0.7190609389379257,
+        "params_max_samples": 0.7468055921327309,
+        "params_min_samples_leaf": 6,
+        "params_n_estimators": 500,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      },
+      {
+        "number": 1,
+        "value": 0.4155721951739047,
+        "datetime_start": "2026-09-28 09:50:41.960612",
+        "datetime_complete": "2026-09-28 09:50:44.955390",
+        "duration": "0 days 00:00:02.994778",
+        "params_max_depth": 5,
+        "params_max_features": 0.7207805082202461,
+        "params_max_samples": 0.9124217733388136,
+        "params_min_samples_leaf": 7,
+        "params_n_estimators": 400,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      },
+      {
+        "number": 2,
+        "value": 0.6103827861613803,
+        "datetime_start": "2026-09-28 09:50:44.955390",
+        "datetime_complete": "2026-09-28 09:50:47.251042",
+        "duration": "0 days 00:00:02.295652",
+        "params_max_depth": 30,
+        "params_max_features": 0.4486373774747932,
+        "params_max_samples": 0.7545474901621302,
+        "params_min_samples_leaf": 7,
+        "params_n_estimators": 300,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      }
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "r2": 0.8831676581714488,
+        "mae": 1.6948282112381678,
+        "rmse": 4.078050178137365,
+        "n_validation": 403
+      },
+      {
+        "fold": 2,
+        "r2": 0.9303989270131974,
+        "mae": 1.455923187163232,
+        "rmse": 3.1359315435039457,
+        "n_validation": 403
+      },
+      {
+        "fold": 3,
+        "r2": 0.8771509848896585,
+        "mae": 1.3915080384871226,
+        "rmse": 4.072789166824192,
+        "n_validation": 403
+      },
+      {
+        "fold": 4,
+        "r2": 0.8900041314639646,
+        "mae": 1.582674913012236,
+        "rmse": 3.5028820010269377,
+        "n_validation": 402
+      },
+      {
+        "fold": 5,
+        "r2": 0.8830011856435362,
+        "mae": 1.9157392337685244,
+        "rmse": 4.271180387509638,
+        "n_validation": 402
+      }
+    ]
+  },
+  {
+    "task": "R",
+    "folder": "E:\\mzh3\\邪修中\\R\\XGBoost_RetentionPercent_去T_CV5",
+    "metrics": {
+      "model": "XGBoost",
+      "dataset": "R",
+      "target": "csv_retention_percent",
+      "target_label": "retention percent (%)",
+      "rows": 2013,
+      "papers": 151,
+      "materials": 160,
+      "r2_oof": 0.9527073341532175,
+      "mae_oof": 1.007135413844128,
+      "rmse_oof": 2.5503546675260482,
+      "r2_fold_mean": 0.9517408490153574,
+      "r2_fold_sd": 0.0169426224147522,
+      "best_cv_r2": 0.9517408490153574,
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+      "optimization": "new Optuna TPE Bayesian optimization after removing T; same 5-fold CV",
+      "n_trials": 30,
+      "numeric_transform": "none; target and conditions retain original units",
+      "T_feature": "removed"
+    },
+    "parameters": {
+      "categorical_feature": [
+        "main"
+      ],
+      "numeric_features": [
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_cycle",
+        "csv_pH",
+        "csv_temperature_K",
+        "MOF_dose_g_L"
+      ],
+      "all_input_features": [
+        "main",
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_cycle",
+        "csv_pH",
+        "csv_temperature_K",
+        "MOF_dose_g_L"
+      ],
+      "target": "csv_retention_percent",
+      "best_model_parameters": {
+        "n_estimators": 600,
+        "max_depth": 8,
+        "learning_rate": 0.08063854251173004,
+        "subsample": 0.8912417901870174,
+        "colsample_bytree": 0.9706418493949199,
+        "min_child_weight": 1,
+        "reg_alpha": 0.0021830812900705573,
+        "reg_lambda": 0.11199897216863863
+      },
+      "optimization": "new Optuna TPE Bayesian optimization after removing T; same 5-fold CV",
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026"
+    },
+    "history_columns": [
+      "number",
+      "value",
+      "datetime_start",
+      "datetime_complete",
+      "duration",
+      "params_colsample_bytree",
+      "params_learning_rate",
+      "params_max_depth",
+      "params_min_child_weight",
+      "params_n_estimators",
+      "params_reg_alpha",
+      "params_reg_lambda",
+      "params_subsample",
+      "system_attrs_tpe:relative_params:0",
+      "state"
+    ],
+    "history_head": [
+      {
+        "number": 0,
+        "value": 0.9373528233848784,
+        "datetime_start": "2026-09-28 10:04:02.038959",
+        "datetime_complete": "2026-09-28 10:04:05.747540",
+        "duration": "0 days 00:00:03.708581",
+        "params_colsample_bytree": 0.5780093202212182,
+        "params_learning_rate": 0.0896078536536812,
+        "params_max_depth": 10,
+        "params_min_child_weight": 2,
+        "params_n_estimators": 500,
+        "params_reg_alpha": 0.000187470592218,
+        "params_reg_lambda": 9.8423157385026,
+        "params_subsample": 0.8394633936788146,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      },
+      {
+        "number": 1,
+        "value": 0.8948176548056906,
+        "datetime_start": "2026-09-28 10:04:05.747540",
+        "datetime_complete": "2026-09-28 10:04:09.000036",
+        "duration": "0 days 00:00:03.252496",
+        "params_colsample_bytree": 0.9162213204002108,
+        "params_learning_rate": 0.0106360665125402,
+        "params_max_depth": 8,
+        "params_min_child_weight": 3,
+        "params_n_estimators": 700,
+        "params_reg_alpha": 0.0007151383480402,
+        "params_reg_lambda": 0.2642526057549916,
+        "params_subsample": 0.9879639408647978,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      },
+      {
+        "number": 2,
+        "value": 0.9364634247614748,
+        "datetime_start": "2026-09-28 10:04:09.000036",
+        "datetime_complete": "2026-09-28 10:04:11.387307",
+        "duration": "0 days 00:00:02.387271",
+        "params_colsample_bytree": 0.8059264473611898,
+        "params_learning_rate": 0.0364731628491121,
+        "params_max_depth": 7,
+        "params_min_child_weight": 2,
+        "params_n_estimators": 500,
+        "params_reg_alpha": 0.0023592770353071,
+        "params_reg_lambda": 0.6966418981413739,
+        "params_subsample": 0.7164916560792167,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      }
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "r2": 0.9581608044734926,
+        "mae": 1.081043687168524,
+        "rmse": 2.4404093878265263,
+        "n_validation": 403
+      },
+      {
+        "fold": 2,
+        "r2": 0.9684794422006704,
+        "mae": 0.8811029282785647,
+        "rmse": 2.1103551733347192,
+        "n_validation": 403
+      },
+      {
+        "fold": 3,
+        "r2": 0.926730779449787,
+        "mae": 0.9521439451735396,
+        "rmse": 3.145334764183658,
+        "n_validation": 403
+      },
+      {
+        "fold": 4,
+        "r2": 0.9426767185182948,
+        "mae": 1.0697159188634189,
+        "rmse": 2.528732224865334,
+        "n_validation": 402
+      },
+      {
+        "fold": 5,
+        "r2": 0.9626565004345424,
+        "mae": 1.0519370466542832,
+        "rmse": 2.4130409414878726,
+        "n_validation": 402
+      }
+    ]
+  },
+  {
+    "task": "R",
+    "folder": "E:\\mzh3\\邪修中\\R\\CatBoost_RetentionPercent_去T_CV5",
+    "metrics": {
+      "model": "CatBoost",
+      "dataset": "R",
+      "target": "csv_retention_percent",
+      "target_label": "retention percent (%)",
+      "rows": 2013,
+      "papers": 151,
+      "materials": 160,
+      "r2_oof": 0.9568887126727081,
+      "mae_oof": 1.0692628946462281,
+      "rmse_oof": 2.435001191838647,
+      "r2_fold_mean": 0.9561990787616772,
+      "r2_fold_sd": 0.016362391208691086,
+      "best_cv_r2": 0.9561990787616772,
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+      "optimization": "new Optuna TPE Bayesian optimization after removing T; same 5-fold CV",
+      "n_trials": 30,
+      "numeric_transform": "none; target and conditions retain original units",
+      "T_feature": "removed"
+    },
+    "parameters": {
+      "categorical_feature": [
+        "main"
+      ],
+      "numeric_features": [
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_cycle",
+        "csv_pH",
+        "csv_temperature_K",
+        "MOF_dose_g_L"
+      ],
+      "all_input_features": [
+        "main",
+        "O_donor",
+        "N_donor",
+        "S_donor",
+        "P_donor",
+        "carboxyl",
+        "amino",
+        "thiol",
+        "sulfonic",
+        "phosphonic",
+        "metal__Al",
+        "metal__Cd",
+        "metal__Co",
+        "metal__Cr",
+        "metal__Cu",
+        "metal__Fe",
+        "metal__Mg",
+        "metal__Ni",
+        "metal__Ti",
+        "metal__Zn",
+        "metal__Zr",
+        "linker__F1",
+        "linker__F10",
+        "linker__F11",
+        "linker__F2",
+        "linker__F4",
+        "linker__F5",
+        "linker__F6",
+        "linker__F7",
+        "linker__F8",
+        "linker__F9",
+        "modulator__acetic acid",
+        "modulator__benzoic acid",
+        "modulator__butyric acid",
+        "modulator__formic acid",
+        "modulator__hydrochloric acid",
+        "modulator__hydrofluoric acid",
+        "modulator__nitric acid",
+        "modulator__none",
+        "modulator__oxalic acid",
+        "modulator__sodium hydroxide",
+        "modulator__triethylamine",
+        "modulator__urea",
+        "BET_m2_g",
+        "total_pore_volume_cm3_g",
+        "average_pore_diameter_nm",
+        "csv_cycle",
+        "csv_pH",
+        "csv_temperature_K",
+        "MOF_dose_g_L"
+      ],
+      "target": "csv_retention_percent",
+      "best_model_parameters": {
+        "iterations": 700,
+        "depth": 6,
+        "learning_rate": 0.14826395117862248,
+        "l2_leaf_reg": 0.19359822928342693,
+        "random_strength": 0.518132114617999,
+        "bagging_temperature": 2.4789856358394537
+      },
+      "optimization": "new Optuna TPE Bayesian optimization after removing T; same 5-fold CV",
+      "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026"
+    },
+    "history_columns": [
+      "number",
+      "value",
+      "datetime_start",
+      "datetime_complete",
+      "duration",
+      "params_bagging_temperature",
+      "params_depth",
+      "params_iterations",
+      "params_l2_leaf_reg",
+      "params_learning_rate",
+      "params_random_strength",
+      "system_attrs_tpe:relative_params:0",
+      "state"
+    ],
+    "history_head": [
+      {
+        "number": 0,
+        "value": 0.9417104627223344,
+        "datetime_start": "2026-09-28 10:05:39.803715",
+        "datetime_complete": "2026-09-28 10:06:09.076387",
+        "duration": "0 days 00:00:29.272672",
+        "params_bagging_temperature": 0.7799726016810132,
+        "params_depth": 10,
+        "params_iterations": 500,
+        "params_l2_leaf_reg": 2.385234757844707,
+        "params_learning_rate": 0.0896078536536812,
+        "params_random_strength": 0.312037280884873,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      },
+      {
+        "number": 1,
+        "value": 0.9228611508485374,
+        "datetime_start": "2026-09-28 10:06:09.076387",
+        "datetime_complete": "2026-09-28 10:06:28.559462",
+        "duration": "0 days 00:00:19.483075",
+        "params_bagging_temperature": 4.849549260809972,
+        "params_depth": 10,
+        "params_iterations": 300,
+        "params_l2_leaf_reg": 4.258888210290081,
+        "params_learning_rate": 0.0605436585546924,
+        "params_random_strength": 0.0411689885916048,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      },
+      {
+        "number": 2,
+        "value": 0.8495939833197268,
+        "datetime_start": "2026-09-28 10:06:28.559462",
+        "datetime_complete": "2026-09-28 10:06:34.431541",
+        "duration": "0 days 00:00:05.872079",
+        "params_bagging_temperature": 2.6237821581611893,
+        "params_depth": 5,
+        "params_iterations": 900,
+        "params_l2_leaf_reg": 0.2642526057549916,
+        "params_learning_rate": 0.0172408921958215,
+        "params_random_strength": 0.6084844859190754,
+        "system_attrs_tpe:relative_params:0": "",
+        "state": "COMPLETE"
+      }
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "r2": 0.9628815994784252,
+        "mae": 1.0178380669070866,
+        "rmse": 2.2986119018923405,
+        "n_validation": 403
+      },
+      {
+        "fold": 2,
+        "r2": 0.9623681220319614,
+        "mae": 1.0180992525139847,
+        "rmse": 2.3058792011953093,
+        "n_validation": 403
+      },
+      {
+        "fold": 3,
+        "r2": 0.9286421724789888,
+        "mae": 1.043687636634198,
+        "rmse": 3.1040370693470285,
+        "n_validation": 403
+      },
+      {
+        "fold": 4,
+        "r2": 0.9557834947522794,
+        "mae": 1.1144054061251736,
+        "rmse": 2.220902680335506,
+        "n_validation": 402
+      },
+      {
+        "fold": 5,
+        "r2": 0.9713200050667308,
+        "mae": 1.152602926294188,
+        "rmse": 2.114690033319608,
+        "n_validation": 402
+      }
+    ]
+  }
+]

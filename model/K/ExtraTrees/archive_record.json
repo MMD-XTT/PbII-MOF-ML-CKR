@@ -1,0 +1,17 @@
+{
+  "task": "K",
+  "algorithm": "ExtraTrees",
+  "selected": false,
+  "source_workbook": "data/K模型_qt统一.xlsx",
+  "source_archive_folder": "ExtraTrees_qt统一_去T_重跑",
+  "training_matrix": "data/training/K_ExtraTrees.csv",
+  "target": "csv_qt",
+  "rows": 2645,
+  "papers": 191,
+  "materials": 208,
+  "categorical_main": false,
+  "oof_target_and_row_order_verified": true,
+  "r2_oof": 0.8445440379160096,
+  "source_workbook_role": "current training/interpretation input; frozen training_matrix preserves archived fit population",
+  "archived_fit_current_workbook_equivalent": true
+}

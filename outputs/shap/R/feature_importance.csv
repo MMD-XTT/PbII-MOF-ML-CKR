@@ -1,0 +1,60 @@
+feature,group,mean_abs_shap
+main__main_M1,M,0.14822526131886476
+main__main_M10,M,1.2436967608106502
+main__main_M2,M,0.3834423871145772
+main__main_M3,M,0.31297624048532785
+main__main_M4,M,0.07681040171561287
+main__main_M5,M,0.19973852186884608
+main__main_M6,M,0.11030636194568383
+main__main_M7,M,0.008635215740466403
+main__main_M8,M,0.043257836120230785
+main__main_M9,M,0.0454343752056316
+numeric__O_donor,O_donor,0.0917180747779085
+numeric__N_donor,N_donor,0.3658962163131792
+numeric__S_donor,S_donor,0.4094046440342066
+numeric__P_donor,P_donor,0.10751461270414542
+numeric__carboxyl,carboxyl,0.2832306809885976
+numeric__amino,amino,0.16461899303925637
+numeric__thiol,thiol,0.012341137930597495
+numeric__sulfonic,sulfonic,0.03855830602306061
+numeric__phosphonic,phosphonic,0.14425407171334895
+numeric__metal__Al,MN,0.05012142706753746
+numeric__metal__Cd,MN,0.45228693699951067
+numeric__metal__Co,MN,0.0654403445553125
+numeric__metal__Cr,MN,0.05491939975599039
+numeric__metal__Cu,MN,0.15150689484717736
+numeric__metal__Fe,MN,1.2022876785417331
+numeric__metal__Mg,MN,0.03473085989511645
+numeric__metal__Ni,MN,0.06911814811966487
+numeric__metal__Ti,MN,0.12393651714380852
+numeric__metal__Zn,MN,0.4362010940264047
+numeric__metal__Zr,MN,0.3645693446139731
+numeric__linker__F1,LF,0.09125211913720813
+numeric__linker__F10,LF,0.015721237288205372
+numeric__linker__F11,LF,0.017326969200235402
+numeric__linker__F2,LF,0.05694212327982584
+numeric__linker__F4,LF,0.47142396399974584
+numeric__linker__F5,LF,0.03400128048200686
+numeric__linker__F6,LF,0.08086706870852786
+numeric__linker__F7,LF,0.017377699407930634
+numeric__linker__F8,LF,0.0
+numeric__linker__F9,LF,0.02129599976413541
+numeric__modulator__acetic acid,Mod,0.14161945521015729
+numeric__modulator__benzoic acid,Mod,0.0003998515696835389
+numeric__modulator__butyric acid,Mod,0.012289873365892849
+numeric__modulator__formic acid,Mod,0.25098661277259915
+numeric__modulator__hydrochloric acid,Mod,0.008742334382267587
+numeric__modulator__hydrofluoric acid,Mod,0.002653729812354725
+numeric__modulator__nitric acid,Mod,0.02002302852562416
+numeric__modulator__none,Mod,0.36905793456368374
+numeric__modulator__oxalic acid,Mod,0.0010439234454760545
+numeric__modulator__sodium hydroxide,Mod,0.07773191438495185
+numeric__modulator__triethylamine,Mod,0.004296827525676046
+numeric__modulator__urea,Mod,4.364065050182757e-05
+numeric__BET_m2_g,BET_m2_g,0.9974970362381412
+numeric__total_pore_volume_cm3_g,total_pore_volume_cm3_g,1.42170209623145
+numeric__average_pore_diameter_nm,average_pore_diameter_nm,1.329135734592619
+numeric__csv_cycle,csv_cycle,4.606342601119583
+numeric__csv_pH,csv_pH,0.5843422654205171
+numeric__csv_temperature_K,csv_temperature_K,0.23050781003919285
+numeric__MOF_dose_g_L,MOF_dose_g_L,0.7319564978132233

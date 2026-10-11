@@ -1,0 +1,20 @@
+{
+  "model": "ExtraTrees",
+  "dataset": "R",
+  "target": "csv_retention_percent",
+  "target_label": "retention percent (%)",
+  "rows": 2013,
+  "papers": 151,
+  "materials": 160,
+  "r2_oof": 0.893025587012583,
+  "mae_oof": 1.607994555425703,
+  "rmse_oof": 3.8356912203526026,
+  "r2_fold_mean": 0.8927445774363612,
+  "r2_fold_sd": 0.02153584965197524,
+  "best_cv_r2": 0.8927445774363612,
+  "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+  "optimization": "new Optuna TPE Bayesian optimization after removing T; same 5-fold CV",
+  "n_trials": 30,
+  "numeric_transform": "none; target and conditions retain original units",
+  "T_feature": "removed"
+}

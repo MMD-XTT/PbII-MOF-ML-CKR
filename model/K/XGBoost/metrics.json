@@ -1,0 +1,20 @@
+{
+  "model": "XGBoost",
+  "dataset": "K",
+  "target": "csv_qt",
+  "target_label": "qt (mg/g)",
+  "rows": 2579,
+  "papers": 185,
+  "materials": 202,
+  "r2_oof": 0.8889940864636395,
+  "mae_oof": 24.485843140334197,
+  "rmse_oof": 88.70055909820947,
+  "r2_fold_mean": 0.9075071327525384,
+  "r2_fold_sd": 0.11944472540271799,
+  "best_cv_r2": 0.9075071327525384,
+  "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+  "optimization": "new Optuna TPE Bayesian optimization after removing T; same 5-fold CV",
+  "n_trials": 30,
+  "numeric_transform": "none; target and conditions retain original units",
+  "T_feature": "removed"
+}

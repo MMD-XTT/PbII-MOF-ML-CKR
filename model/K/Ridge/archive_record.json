@@ -1,0 +1,17 @@
+{
+  "task": "K",
+  "algorithm": "Ridge",
+  "selected": false,
+  "source_workbook": "data/K模型_qt统一.xlsx",
+  "source_archive_folder": "Ridge_qt统一_去T_重跑",
+  "training_matrix": "data/training/K_Ridge.csv",
+  "target": "csv_qt",
+  "rows": 2645,
+  "papers": 191,
+  "materials": 208,
+  "categorical_main": false,
+  "oof_target_and_row_order_verified": true,
+  "r2_oof": 0.2770488948793418,
+  "source_workbook_role": "current training/interpretation input; frozen training_matrix preserves archived fit population",
+  "archived_fit_current_workbook_equivalent": true
+}

@@ -1,0 +1,16 @@
+{
+  "model": "CatBoost",
+  "target": "csv_qt",
+  "rows": 2645,
+  "papers": 191,
+  "materials": 208,
+  "r2_oof": 0.8861413023760192,
+  "mae_oof_mg_g": 49.22856523753837,
+  "rmse_oof_mg_g": 81.683562739174,
+  "r2_fold_mean": 0.8859152724203533,
+  "r2_fold_sd": 0.019564475511025043,
+  "best_cv_r2": 0.8859152724203533,
+  "trials": 30,
+  "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+  "note": "去掉tip/T特征"
+}

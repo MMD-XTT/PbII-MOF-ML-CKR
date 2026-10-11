@@ -1,0 +1,16 @@
+{
+  "model": "ExtraTrees",
+  "target": "csv_qe",
+  "rows": 3060,
+  "papers": 190,
+  "materials": 206,
+  "r2_oof": 0.8530419159511782,
+  "mae_oof_mg_g": 57.67769574143955,
+  "rmse_oof_mg_g": 92.67931673359361,
+  "r2_fold_mean": 0.8512678379224845,
+  "r2_fold_sd": 0.023110700248799014,
+  "best_cv_r2": 0.8512678379224845,
+  "trials": 30,
+  "validation": "ordinary random 5-fold KFold, shuffle=True, random_state=2026",
+  "note": "去掉tip/T特征"
+}

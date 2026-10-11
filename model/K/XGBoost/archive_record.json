@@ -1,0 +1,17 @@
+{
+  "task": "K",
+  "algorithm": "XGBoost",
+  "selected": true,
+  "source_workbook": "data/K模型_qt统一.xlsx",
+  "source_archive_folder": "XGBoost_qt统一_去T_重跑",
+  "training_matrix": "data/training/K_XGBoost.csv",
+  "target": "csv_qt",
+  "rows": 2579,
+  "papers": 185,
+  "materials": 202,
+  "categorical_main": true,
+  "oof_target_and_row_order_verified": true,
+  "r2_oof": 0.8889940864636395,
+  "source_workbook_role": "current training/interpretation input; frozen training_matrix preserves archived fit population",
+  "archived_fit_current_workbook_equivalent": false
+}
